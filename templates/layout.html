@@ -29,7 +29,12 @@
         				</div>
         				<!-- Navbar Right Side -->
         				<div class="navbar-nav">
-          					<a class="nav-item nav-link" href="/login">Login</a>
+						{% if session %}
+							<p>Welcome {{session.userinfo.name}}!</p>
+							<a class="nav-item nav-link" href="/logout">Logout</a>
+						{% else %}
+          						<a class="nav-item nav-link" href="/login">Login</a>
+						{% endif %}
         				</div>
       				</div>
     			</div>
