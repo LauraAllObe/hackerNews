@@ -7,14 +7,33 @@ from authlib.integrations.flask_client import OAuth
 from dotenv import find_dotenv, load_dotenv
 from flask import Flask, render_template, request, jsonify, url_for, redirect, session
 
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
+
 #auth0 .env file recognition
 ENV_FILE = find_dotenv()
 if ENV_FILE:
     load_dotenv(ENV_FILE)
 
 app = Flask(__name__)
+
 #set auth0 secret key
 app.secret_key = env.get("APP_SECRET_KEY")
+#app.config['SECRET_KEY'] = '8fa763ec394817a3c0e382b5a5f3470be1f295204990741a92f7aaf1ed06f75a'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+db = SQLAlchemy(app)
+
+class News(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    by = db.Column(db.String(100), nullable=False)
+    title = db.Column(db.String(500), nullable=False)
+    date = db.Column(db.DateTime, default=datetime.utcnow)
+    url = db.Column(db.String(1000), nullable=False)
+
+    def __repr__(self):
+        return f"News('{self.title}','{self.date}')"
+
+
 
 #configure Authlib to handle application's authentication with Auth0
 oauth = OAuth(app)
@@ -98,4 +117,4 @@ def logout():
     )
 
 if __name__ == '__main__':
-    app.run(host='192.155.90.192', port=env.get("PORT", 5000), debug=True)
+    app.run(host='192.155.90.192', port=5000, debug=True)
