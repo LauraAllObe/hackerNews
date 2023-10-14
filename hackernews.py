@@ -8,6 +8,7 @@ from dotenv import find_dotenv, load_dotenv
 from flask import Flask, render_template, request, jsonify, url_for, redirect, session
 
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime
 
 #auth0 .env file recognition
@@ -54,7 +55,9 @@ news_items = []
 @app.route("/")
 @app.route("/home")
 def hello():
-    return render_template('home.html', news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    #return render_template('home.html', news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    return render_template('home.html', news_items=News.query.all(), session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+
 
 
 def fetch_news_item(item_id):
@@ -79,6 +82,23 @@ def newsfeed():
             news_item = fetch_news_item(item_id)
             if news_item:
                 news_items.append(news_item)
+                existing_news_item = News.query.filter_by(id=news_item["id"]).first()
+                if not existing_news_item:
+                    try:
+                        news_time = news_item.get("time", 0)
+                        news_datetime = datetime.utcfromtimestamp(news_time)
+
+                        new_news = News(
+                                date=news_datetime,
+                                by=news_item.get("by", "Unknown"),
+                                title=news_item.get("title", "No Title"),
+                                url=news_item.get("url", ""),
+                                id=news_item["id"]
+                        )
+                        db.session.add(new_news)
+                        db.session.commit()
+                    except IntegrityError:
+                        db.session.rollback()
 
         return jsonify(news_items)
     else:
