@@ -1,12 +1,14 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, url_for
 import requests
 
 app = Flask(__name__)
 
+news_items = []
+
 @app.route("/")
 @app.route("/home")
 def hello():
-    return render_template('home.html')
+    return render_template('home.html', news_items=news_items)
 
 
 def fetch_news_item(item_id):
@@ -26,7 +28,7 @@ def newsfeed():
     if response.status_code == 200:
         news_item_ids = response.json()
 
-        news_items = []
+        global news_items
         for item_id in news_item_ids:
             news_item = fetch_news_item(item_id)
             if news_item:

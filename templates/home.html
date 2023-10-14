@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for news_item in news_items %}
+		<article class="media content-section">
+  			<div class="media-body">
+    				<div class="article-metadata">
+					<a class="mr-2" href="#">By {{news_item["by"]}}</a>
+    				</div>
+    				<h2><a class="article-title" href="#">{{news_item["title"]}}</a></h2>
+				<p class="article-content">Url: {{news_item["url"]}}</p>
+  			</div>
+		</article>
+	{% endfor %}
+{% endblock content %}
