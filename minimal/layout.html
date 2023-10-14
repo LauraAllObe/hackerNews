@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+        {% if title %}
+                <title>Hacker news - {{ title }}</title>
+        {% else %}
+                <title>Hacker news home page!!!</title>
+        {% endif %}
+</head>
+<body>
+	{% block content %}{% endblock %}
+</body>
+</html>
+
