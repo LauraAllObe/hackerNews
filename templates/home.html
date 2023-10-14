@@ -4,11 +4,12 @@
 		<article class="media content-section">
   			<div class="media-body">
     				<div class="article-metadata">
-					<a class="mr-2" href="#">By {{news_item["by"]}}</a>
+					<p>By {{news_item["by"]}}</p>
     				</div>
-    				<h2><a class="article-title" href="#">{{news_item["title"]}}</a></h2>
-				<p class="article-content">Url: {{news_item["url"]}}</p>
-  			</div>
+    				<h2 class="article-title">{{news_item["title"]}}</h2>
+  		                <p>Url: <a class="article-content" href="{{ news_item["url"] }}" target="_blank">{{ news_item["url"] }}</a></p>
+
+			</div>
 		</article>
 	{% endfor %}
 {% endblock content %}
