@@ -31,10 +31,9 @@ oauth.register(
 news_items = []
 
 @app.route("/")
-@app.route("/home")
-def hello():
+def home():
     #return render_template('home.html', news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
-    return render_template('home.html', news_items=News.query.all(), session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    return render_template("home.html", news_items=News.query.all(), session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 

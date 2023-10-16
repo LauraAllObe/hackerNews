@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+        .welcome-line {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: #DFF0D8;
+	    margin-top: 4px;
+	    margin-bottom: -4px;
+        }
+    	</style>
+    	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
 	<!-- Required meta tags -->
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +41,7 @@
         				<!-- Navbar Right Side -->
         				<div class="navbar-nav">
 						{% if session %}
-							<p>Welcome {{session.userinfo.name}}!</p>
+							<p class="welcome-line">Welcome {{session.userinfo.name}}!</p>
 							<a class="nav-item nav-link" href="/logout">Logout</a>
 						{% else %}
           						<a class="nav-item nav-link" href="/login">Login</a>
