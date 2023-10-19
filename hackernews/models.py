@@ -11,3 +11,11 @@ class News(db.Model):
     def __repr__(self):
         return f"News('{self.title}','{self.date}')"
 
+    def as_dict(self):
+        return {
+                'id': self.id,
+                'by': self.by,
+                'title': self.title,
+                'date': self.date,
+                'url': self.url
+            }

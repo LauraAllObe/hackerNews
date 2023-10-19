@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-	{% for news_item in news_items %}
+	{% for news_item in news_items|reverse %}
 		<article class="news content-section">
   			<div class="news-body">
     				<div class="news-metadata">

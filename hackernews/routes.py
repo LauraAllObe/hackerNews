@@ -36,52 +36,56 @@ def home():
     return render_template("home.html", news_items=News.query.all(), session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
-
-def fetch_news_item(item_id):
-    item_url = f"https://hacker-news.firebaseio.com/v0/item/{item_id}.json"
-    response = requests.get(item_url)
-
-    if response.status_code == 200:
-        return response.json()
-    else:
-        return None
-
-@app.route("/newsfeed")
-def newsfeed():
+def fetch_news_items():
+    """
+    function definition to fetch each news item given an Id. Iterated over by
+    newsfeed function. returns json formatted news items.
+    """
     api_url = "https://hacker-news.firebaseio.com/v0/newstories.json"
-    response = requests.get(api_url)
+    response = requests.get(api_url, timeout=300)
 
     if response.status_code == 200:
         news_item_ids = response.json()
-
-        global news_items
         for item_id in news_item_ids:
-            news_item = fetch_news_item(item_id)
-            if news_item:
-                news_items.append(news_item)
-                existing_news_item = News.query.filter_by(id=news_item["id"]).first()
-                if not existing_news_item:
-                    try:
-                        news_time = news_item.get("time", 0)
-                        news_datetime = datetime.utcfromtimestamp(news_time)
+            item_url = f"https://hacker-news.firebaseio.com/v0/item/{item_id}.json"
+            response = requests.get(item_url, timeout=120)
+            if response.status_code == 200:
+                news_item = response.json()
+                if news_item:
+                    existing_news_item = News.query.filter_by(id=news_item["id"]).first()
+                    if not existing_news_item:
+                        try:
+                            news_time = news_item.get("time", 0)
+                            news_datetime = datetime.utcfromtimestamp(news_time)
 
-                        new_news = News(
+                            new_news = News(
                                 date=news_datetime,
                                 by=news_item.get("by", "Unknown"),
                                 title=news_item.get("title", "No Title"),
                                 url=news_item.get("url", ""),
                                 id=news_item["id"]
-                        )
-                        db.session.add(new_news)
-                        db.session.commit()
-                    except IntegrityError:
-                        db.session.rollback()
+                            )
+                            db.session.add(new_news)
+                            db.session.commit()
+                        except IntegrityError:
+                            db.session.rollback()
+        return None  # No specific error to return
+    error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
+    print(error_message)
+    return error_message, 500
 
-        return jsonify(news_items)
-    else:
-        error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
-        print(error_message)
-        return error_message, 500
+
+@app.route("/newsfeed")
+def newsfeed():
+    """
+    Function definition to fetch news items, sort them by date, and return the 30 latest 
+    news items in JSON format.
+    """
+    news_items = News.query.all()
+    sorted_news_items = sorted(news_items, key=lambda item: item.date, reverse=True)
+    latest_news_items = sorted_news_items[:30]
+    news_json = [item.as_dict() for item in latest_news_items]
+    return jsonify(news_json)
 
 #place for auth0
 @app.route("/login")
