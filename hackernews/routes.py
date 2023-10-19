@@ -55,11 +55,8 @@ def fetch_news_items():
                     existing_news_item = News.query.filter_by(id=news_item["id"]).first()
                     if not existing_news_item:
                         try:
-                            news_time = news_item.get("time", 0)
-                            news_datetime = datetime.utcfromtimestamp(news_time)
-
                             new_news = News(
-                                date=news_datetime,
+                                date=news_item.get("time", 0),
                                 by=news_item.get("by", "Unknown"),
                                 title=news_item.get("title", "No Title"),
                                 url=news_item.get("url", ""),
@@ -81,11 +78,12 @@ def newsfeed():
     Function definition to fetch news items, sort them by date, and return the 30 latest 
     news items in JSON format.
     """
+    title = "Newsfeed"
     news_items = News.query.all()
     sorted_news_items = sorted(news_items, key=lambda item: item.date, reverse=True)
     latest_news_items = sorted_news_items[:30]
     news_json = [item.as_dict() for item in latest_news_items]
-    return jsonify(news_json)
+    return render_template('newsfeed.html', news_json=news_json, title=title)
 
 #place for auth0
 @app.route("/login")
