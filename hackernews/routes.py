@@ -36,19 +36,29 @@ def home():
     return render_template("home.html", news_items=News.query.all(), session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
+def remove_old():
+    items_to_delete = News.query.count() - 30
+    oldest_items = News.query.order_by(News.date.asc()).limit(items_to_delete).all()
+        for item in oldest_items:
+            db.session.delete(item)
+            db.session.commit()
+
+
 def fetch_news_items():
     """
     function definition to fetch each news item given an Id. Iterated over by
     newsfeed function. returns json formatted news items.
     """
+    if News.query.count() > 30:
+        remove_old()
     api_url = "https://hacker-news.firebaseio.com/v0/newstories.json"
-    response = requests.get(api_url, timeout=300)
+    response = requests.get(api_url)
 
     if response.status_code == 200:
         news_item_ids = response.json()
         for item_id in news_item_ids:
             item_url = f"https://hacker-news.firebaseio.com/v0/item/{item_id}.json"
-            response = requests.get(item_url, timeout=120)
+            response = requests.get(item_url)
             if response.status_code == 200:
                 news_item = response.json()
                 if news_item:
@@ -56,11 +66,11 @@ def fetch_news_items():
                     if not existing_news_item:
                         try:
                             new_news = News(
-                                date=news_item.get("time", 0),
+                                id=news_item["id"],
                                 by=news_item.get("by", "Unknown"),
                                 title=news_item.get("title", "No Title"),
-                                url=news_item.get("url", ""),
-                                id=news_item["id"]
+                                date=news_item.get("time", 0),
+                                url=news_item.get("url", "")
                             )
                             db.session.add(new_news)
                             db.session.commit()
@@ -78,6 +88,7 @@ def newsfeed():
     Function definition to fetch news items, sort them by date, and return the 30 latest 
     news items in JSON format.
     """
+    fetch_news_items()
     title = "Newsfeed"
     news_items = News.query.all()
     sorted_news_items = sorted(news_items, key=lambda item: item.date, reverse=True)
