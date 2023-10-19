@@ -37,11 +37,11 @@ def home():
 
 
 def remove_old():
-    items_to_delete = News.query.count() - 30
+    items_to_delete = News.query.count() - 250
     oldest_items = News.query.order_by(News.date.asc()).limit(items_to_delete).all()
-        for item in oldest_items:
-            db.session.delete(item)
-            db.session.commit()
+    for item in oldest_items:
+        db.session.delete(item)
+        db.session.commit()
 
 
 def fetch_news_items():
@@ -49,7 +49,7 @@ def fetch_news_items():
     function definition to fetch each news item given an Id. Iterated over by
     newsfeed function. returns json formatted news items.
     """
-    if News.query.count() > 30:
+    if News.query.count() > 250:
         remove_old()
     api_url = "https://hacker-news.firebaseio.com/v0/newstories.json"
     response = requests.get(api_url)
