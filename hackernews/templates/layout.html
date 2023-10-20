@@ -5,7 +5,7 @@
         .welcome-line {
             font-family: 'Playfair Display', serif;
             font-size: 20px;
-            color: #DFF0D8;
+            color: #7f7474;
 	    margin-top: 4px;
 	    margin-bottom: -4px;
         }
@@ -27,7 +27,7 @@
 	<header class="site-header">
   		<nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
     			<div class="container">
-      				<a class="navbar-brand mr-4" href="/">Hacker News</a>
+      				<a style="color: #dfcccc;"class="navbar-brand mr-4" href="/">Hacker News</a>
       				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         				<span class="navbar-toggler-icon"></span>
       				</button>
@@ -54,14 +54,14 @@
       				{% block content %}{% endblock %}
 			</div>
     			<div class="col-md-4">
-      				<div class="content-section">
+      				<div class="content-section" style="background-color: #725b5b;">
         				<h3>Our Sidebar</h3>
-        				<p class='text-muted'>You can put any information here you'd like.
-          					<ul class="list-group">
-            						<li class="list-group-item list-group-item-light">Latest News</li>
-            						<li class="list-group-item list-group-item-light">Announcements</li>
-            						<li class="list-group-item list-group-item-light">Calendars</li>
-            						<li class="list-group-item list-group-item-light">etc</li>
+        				<p style="color: #7f7474;" >You can put any information here you'd like.
+          					<ul style="border: 1px solid #cebbbb;" class="list-group">
+            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">Latest News</li>
+            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">Announcements</li>
+            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">Calendars</li>
+            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">etc</li>
         					</ul>
         				</p>
       				</div>
