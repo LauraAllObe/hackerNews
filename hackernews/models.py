@@ -3,10 +3,11 @@ from datetime import datetime
 
 class News(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    by = db.Column(db.String(100), nullable=False)
-    title = db.Column(db.String(500), nullable=False)
-    date = db.Column(db.DateTime, nullable=False)
-    url = db.Column(db.String(1000), nullable=False)
+    by = db.Column(db.String(100), nullable=False, default="Anonymous")
+    title = db.Column(db.String(500), nullable=False, default="")
+    date = db.Column(db.DateTime, default=datetime.utcnow)
+    url = db.Column(db.String(1000), nullable=False, default="")
+    descendants = db.Column(db.Integer, default=0)
 
     def __repr__(self):
         return f"News('{self.title}','{self.date}')"
@@ -17,5 +18,6 @@ class News(db.Model):
                 'by': self.by,
                 'title': self.title,
                 'date': self.date,
-                'url': self.url
+                'url': self.url,
+                'descendants': self.descendants
             }

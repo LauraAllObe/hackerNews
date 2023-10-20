@@ -1,5 +1,6 @@
 import requests
 import json
+import pytz
 from hackernews import app
 from os import environ as env
 from urllib.parse import quote_plus, urlencode
@@ -10,7 +11,7 @@ from flask import Flask, render_template, request, jsonify, url_for, redirect, s
 
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
-from datetime import datetime
+from datetime import datetime, timezone
 from hackernews.models import News
 from hackernews import db
 
@@ -41,11 +42,12 @@ def fetch_news_items():
     function definition to fetch each news item given an Id. Iterated over by
     newsfeed function. returns json formatted news items.
     """
-    api_url = "https://hacker-news.firebaseio.com/v0/newstories.json"
+    api_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
     response = requests.get(api_url)
-
+    
     if response.status_code == 200:
-        news_item_ids = response.json()
+        news_item_ids = response.json()[:50]
+        saved_items=0
         for item_id in news_item_ids:
             item_url = f"https://hacker-news.firebaseio.com/v0/item/{item_id}.json"
             response = requests.get(item_url)
@@ -53,20 +55,27 @@ def fetch_news_items():
                 news_item = response.json()
                 if news_item:
                     existing_news_item = News.query.filter_by(id=news_item["id"]).first()
-                    if not existing_news_item:
+                    if not existing_news_item and news_item["title"] and news_item["by"] and news_item["url"] and news_item["type"] == "story":
+                        timestamp = news_item.get("time")
+                        datetime_value = datetime.fromtimestamp(timestamp, tz=timezone.utc)
                         try:
                             new_news = News(
                                 id=news_item["id"],
-                                by=news_item.get("by", "Unknown"),
-                                title=news_item.get("title", "No Title"),
-                                date=news_item.get("time", 0),
-                                url=news_item.get("url", "")
+                                by=news_item.get("by"),
+                                title=news_item.get("title"),
+                                date=datetime_value.strftime("%Y-%m-%d %H:%M:%S %Z"),
+                                url=news_item.get("url"),
+                                descendants=news_item.get("descendants")
                             )
                             db.session.add(new_news)
+                            saved_items+=1
                             db.session.commit()
                         except IntegrityError:
                             db.session.rollback()
-        return jsonify(news_items)
+        #print(f"{saved_items} items saved to the database at {datetime.datetime.now()}")
+        if news_items:
+            return jsonify(news_items)
+        return "Hi"
     else:
         error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
         print(error_message)
@@ -79,12 +88,14 @@ def newsfeed():
     Function definition to fetch news items, sort them by date, and return the 30 latest 
     news items in JSON format.
     """
+    fetch_news_items()
     title = "Newsfeed"
     news_items = News.query.all()
-    sorted_news_items = sorted(news_items, key=lambda item: item.date, reverse=True)
-    latest_news_items = sorted_news_items[:30]
+    latest_news_items = sorted(news_items, key=lambda item: item.id, reverse=True)[:30]
     news_json = [item.as_dict() for item in latest_news_items]
-    return render_template('newsfeed.html', news_json=news_json, title=title)
+    if news_items:
+        return news_json
+    return "Hi"
 
 #place for auth0
 @app.route("/login")
