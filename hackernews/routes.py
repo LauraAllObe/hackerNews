@@ -14,6 +14,7 @@ from datetime import datetime
 from hackernews.models import News
 from hackernews import db
 
+
 #configure Authlib to handle application's authentication with Auth0
 oauth = OAuth(app)
 
@@ -36,21 +37,11 @@ def home():
     return render_template("home.html", news_items=News.query.all(), session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
-def remove_old():
-    items_to_delete = News.query.count() - 250
-    oldest_items = News.query.order_by(News.date.asc()).limit(items_to_delete).all()
-    for item in oldest_items:
-        db.session.delete(item)
-        db.session.commit()
-
-
 def fetch_news_items():
     """
     function definition to fetch each news item given an Id. Iterated over by
     newsfeed function. returns json formatted news items.
     """
-    if News.query.count() > 250:
-        remove_old()
     api_url = "https://hacker-news.firebaseio.com/v0/newstories.json"
     response = requests.get(api_url)
 
@@ -76,10 +67,11 @@ def fetch_news_items():
                             db.session.commit()
                         except IntegrityError:
                             db.session.rollback()
-        return None  # No specific error to return
-    error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
-    print(error_message)
-    return error_message, 500
+        return jsonify(news_items)
+    else:
+        error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
+        print(error_message)
+        return error_message, 500
 
 
 @app.route("/newsfeed")
@@ -88,7 +80,6 @@ def newsfeed():
     Function definition to fetch news items, sort them by date, and return the 30 latest 
     news items in JSON format.
     """
-    fetch_news_items()
     title = "Newsfeed"
     news_items = News.query.all()
     sorted_news_items = sorted(news_items, key=lambda item: item.date, reverse=True)
