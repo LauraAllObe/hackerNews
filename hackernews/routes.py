@@ -95,7 +95,15 @@ def fetch_news_items():
                             by=news_item.get("by", "Unknown"),
                             title=news_item.get("title", "N/A"),
                             date=datetime_value,
-                            url=news_item.get("url", "N/A")
+                            url=news_item.get("url", "N/A"),
+                            descendants=news_item.get("descendants") if "descendants" in news_item else None,
+                            score=news_item.get("score") if "score" in news_item else None,
+                            type=news_item.get("type"),
+                            deleted=news_item.get("deleted") if "deleted" in news_item else None,
+                            dead=news_item.get("dead") if "dead" in news_item else None,
+                            parent=news_item.get("parent") if "parent" in news_item else None,
+                            text=news_item.get("text") if "text" in news_item else None,
+                            kids=json.dumps(news_item.get("kids")) if "kids" in news_item else None
                         )
                         db.session.add(new_news)
                         db.session.commit()
