@@ -34,7 +34,9 @@ news_items = []
 
 @app.route("/")
 def home():
-    return render_template("home.html", news_items=News.query.all(), session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    page = request.args.get('page', 1, type=int)
+    news_items = News.query.paginate(page=page, per_page=10)
+    return render_template("home.html", news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 @app.route("/last_fifty")
@@ -160,3 +162,6 @@ def logout():
         )
     )
 
+@app.route("/account")
+def account():
+    return render_template("account.html", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))

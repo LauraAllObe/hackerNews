@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-	{% for news_item in news_items|reverse %}
+	{% for news_item in news_items.items|reverse %}
 		<article class="news content-section">
   			<div class="news-body">
     				<div class="news-metadata">
@@ -16,5 +16,16 @@
 
 			</div>
 		</article>
+	{% endfor %}
+	{% for page_num in news_items.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+		{% if page_num %}
+			{% if news_items.page == page_num %}
+				<a class="active-page-button"href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+			{% else %}
+				<a class="page-button"href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+			{% endif %}
+		{% else %}
+			...
+		{% endif %}
 	{% endfor %}
 {% endblock content %}
