@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for news_item in news_items|reverse %}
+		<article class="news content-section">
+  			<div class="news-body">
+    				<div class="news-metadata">
+					<p class="mb-0">
+						<span class="float-left">By {{ news_item.by }}</span>
+						<span class="float-right">{{ news_item.date }}</span>
+					</p>
+    				</div>
+    				<h2 class="newsitem-title">
+					<span class="d-block" style="clear: left;">{{ news_item.title }}</span>
+				</h2>
+  		                <p>Url: <a style="color: #5a4646;" class="newsitem_url" href="{{ news_item.url }}" target="_blank">{{ news_item.url }}</a></p>
+
+			</div>
+		</article>
+	{% endfor %}
+{% endblock content %}
