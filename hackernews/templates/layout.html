@@ -34,15 +34,14 @@
       				<div class="collapse navbar-collapse" id="navbarToggle">
         				<div class="navbar-nav mr-auto">
           					<a class="nav-item nav-link" href="/">Home</a>
-						{% if session %}
-						<a class="nav-item nav-link" href="/account">Account</a>
-						{% endif %}
+						<a class="nav-item nav-link" href="/newsfeed">Newsfeed</a>
         				</div>
         				<!-- Navbar Right Side -->
         				<div class="navbar-nav">
 						{% if session %}
 							<p class="welcome-line">Welcome {{session.userinfo.name}}!</p>
 							<a class="nav-item nav-link" href="/logout">Logout</a>
+							<a class="nav-item nav-link" href="/account">Profile</a>
 						{% else %}
           						<a class="nav-item nav-link" href="/login">Login/Sign in</a>
 						{% endif %}
