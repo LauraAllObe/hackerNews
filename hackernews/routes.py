@@ -32,29 +32,21 @@ oauth.register(
 #global store the json news items (currently all from get news items)
 news_items = []
 
+
+@app.template_filter('unix_to_datetime')
+def unix_to_datetime(timestamp):
+    # Convert the Unix timestamp to a datetime object
+    dt = datetime.fromtimestamp(timestamp, tz=timezone.utc)
+    # Format the datetime as a string in the desired format
+    formatted_dt = dt.strftime('%Y-%m-%d %H:%M:%S %Z')  # Adjust the format as needed
+    return formatted_dt
+
+
 @app.route("/")
 def home():
     page = request.args.get('page', 1, type=int)
     news_items = News.query.paginate(page=page, per_page=10)
     return render_template("home.html", news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
-
-
-@app.route("/last_fifty")
-def last_fifty():
-    api_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
-    response = requests.get(api_url)
-    fetched_items = []
-    if response.status_code == 200:
-        news_item_ids = response.json()[:50]
-        for item_id in news_item_ids:
-            news_item = fetch_news_item(item_id)
-            if news_item:
-                fetched_items.append(news_item)
-        return jsonify(fetched_items)
-    else:
-        error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
-        print(error_message)
-        return error_message, 500
 
 
 def fetch_news_item(item_id):
@@ -89,14 +81,14 @@ def fetch_news_items():
                     and news_item.get("type") == "story"
                 ):
                     try:
-                        news_time = news_item.get("time", 0)
-                        datetime_value = datetime.utcfromtimestamp(news_time)
+                        #inews_time = news_item.get("time", 0)
+                        #datetime_value = datetime.utcfromtimestamp(news_time)
      
                         new_news = News(
                             id=news_item["id"],
                             by=news_item.get("by", "Unknown"),
                             title=news_item.get("title", "N/A"),
-                            date=datetime_value,
+                            time=news_item.get("time"),
                             url=news_item.get("url", "N/A"),
                             descendants=news_item.get("descendants") if "descendants" in news_item else None,
                             score=news_item.get("score") if "score" in news_item else None,
@@ -128,9 +120,10 @@ def newsfeed():
     news_items = News.query.all()
     latest_news_items = sorted(news_items, key=lambda item: item.id, reverse=True)[:30]
     news_json = [item.as_dict() for item in latest_news_items]
-    if news_items:
+    if news_json and news_items:
         return news_json
     return "Nothing to display"
+
 
 #place for auth0
 @app.route("/login")

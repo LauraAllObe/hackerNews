@@ -5,7 +5,7 @@ class News(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     by = db.Column(db.String(100), nullable=False, default="Anonymous")
     title = db.Column(db.String(500), nullable=False, default="N/A")
-    date = db.Column(db.DateTime, default=datetime.utcnow)
+    time = db.Column(db.Integer, nullable=True)
     url = db.Column(db.String(1000), nullable=False, default="N/A")
     descendants = db.Column(db.Integer, nullable=True)
     score = db.Column(db.Integer, nullable=True)
@@ -20,18 +20,23 @@ class News(db.Model):
         return f"News('{self.title}','{self.date}')"
 
     def as_dict(self):
-        return {
-                'id': self.id,
-                'by': self.by,
-                'title': self.title,
-                'date': self.date,
-                'url': self.url,
-                'descendants': self.descendants,
-                'score': self.score,
-                'type': self.type,
-                'deleted': self.deleted,
-                'dead': self.dead,
-                'parent': self.parent,
-                'text': self.text,
-                'kids': self.kids
-            }
+        data = {
+            'id': self.id,
+            'by': self.by,
+            'title': self.title,
+            'time': self.time,
+            'url': self.url,
+            'descendants': self.descendants,
+            'score': self.score,
+            'type': self.type,
+            'deleted': self.deleted,
+            'dead': self.dead,
+            'parent': self.parent,
+            'text': self.text,
+            'kids': self.kids
+        }
+        keys_to_exclude = [key for key, value in data.items() if value is None]
+        for key in keys_to_exclude:
+            del data[key]
+        return data
+

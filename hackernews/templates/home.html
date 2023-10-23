@@ -6,7 +6,7 @@
     				<div class="news-metadata">
 					<p class="mb-0">
 						<span class="float-left">By {{ news_item.by }}</span>
-						<span class="float-right">{{ news_item.date }}</span>
+						<span class="float-right">{{ news_item.time | unix_to_datetime }}</span>
 					</p>
     				</div>
     				<h2 class="newsitem-title">
