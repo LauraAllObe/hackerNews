@@ -9,7 +9,7 @@ from authlib.integrations.flask_client import OAuth
 from dotenv import find_dotenv, load_dotenv
 from flask import Flask, render_template, request, jsonify, url_for, redirect, session
 
-from flask_sqlalchemy import SQLAlchemy, get_or_404
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime, timezone
 from hackernews import app, db
@@ -46,7 +46,9 @@ def unix_to_datetime(timestamp):
 def home():
     page = request.args.get('page', 1, type=int)
     news_items = News.query.paginate(page=page, per_page=10)
-    return render_template("home.html", news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    admins = Admin.query.all()
+    admin_emails = [admin.email for admin in admins]
+    return render_template("home.html", admin_emails=admin_emails, news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 def fetch_news_item(item_id):
@@ -157,7 +159,9 @@ def logout():
 
 @app.route("/account")
 def account():
-    return render_template("account.html", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    admins = Admin.query.all()
+    admin_emails = [admin.email for admin in admins]
+    return render_template("account.html", admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 @app.route("/admin", methods=["GET", "POST"])

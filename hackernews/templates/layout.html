@@ -44,8 +44,6 @@
 							<a class="nav-item nav-link" href="/account">Profile</a>
 							{% if session.userinfo.email in admin_emails %}
             							<a class="nav-item nav-link" href="/admin">Admin</a>
-							{% else %}
-								<a class="nav-item nav-link" href="/admin">Admin</a>
         						{% endif %}
 						{% else %}
           						<a class="nav-item nav-link" href="/login">Login/Sign in</a>

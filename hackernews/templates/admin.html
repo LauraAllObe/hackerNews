@@ -1,28 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-    <h2>Admin Panel</h2>
-    
-    <h3>Admin Emails</h3>
+    <h2>Admins</h2>
     <ul>
         {% for email in admin_emails %}
-            <li>
-                {{ email }}
-                <form method="post">
-                    <button type="submit" class="btn btn-danger">Delete</button>
+	    <ul style="margin: 0; padding: 0; list-style-type: none;"><li>
+		{{ email }}
+                <form method="post" style="display: inline;">
+		    <input type="hidden" name="delete" value="{{ email }}">
+                    <button style="color: #bdaaaa; border-color: #581e1e; background: #581e1e; height: 25px; width: 50px; font-size: 12px; padding: 0px;" type="submit" class="btn btn-danger">Delete</button>
                 </form>
-            </li>
+	    </li></ul>
         {% endfor %}
     </ul>
-    
-    <h3>Add an Admin Email</h3>
+
     <form method="post">
-        <div class="form-group">
-            <label for="newEmail">Email:</label>
-            <input type="text" class="form-control" id="newEmail" name="new_email" placeholder="Enter email">
+        <div class="form-group d-flex align-items-left">
+            <input style="width: 250px; background: #dfcccc;" type="text" class="form-control form-control-sm ml-2" id="newEmail" name="new_email" placeholder="prefix@dom.ain">
+            <button style="color: #bdaaaa; background: #585d63; border-color: #587474;"type="submit" class="btn btn-primary ml-2">Add</button>
         </div>
-        <button type="submit" class="btn btn-primary">Add Email</button>
     </form>
+
 </div>
 {% endblock content %}
 
