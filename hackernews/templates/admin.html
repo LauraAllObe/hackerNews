@@ -1,6 +1,28 @@
 {% extends "layout.html" %}
 {% block content %}
-	
-
+<div class="container">
+    <h2>Admin Panel</h2>
+    
+    <h3>Admin Emails</h3>
+    <ul>
+        {% for email in admin_emails %}
+            <li>
+                {{ email }}
+                <form method="post">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <h3>Add an Admin Email</h3>
+    <form method="post">
+        <div class="form-group">
+            <label for="newEmail">Email:</label>
+            <input type="text" class="form-control" id="newEmail" name="new_email" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Email</button>
+    </form>
+</div>
 {% endblock content %}
 

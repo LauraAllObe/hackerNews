@@ -9,7 +9,7 @@ from authlib.integrations.flask_client import OAuth
 from dotenv import find_dotenv, load_dotenv
 from flask import Flask, render_template, request, jsonify, url_for, redirect, session
 
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy, get_or_404
 from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime, timezone
 from hackernews import app, db
@@ -160,9 +160,28 @@ def account():
     return render_template("account.html", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
-
-@app.route("/admin")
+@app.route("/admin", methods=["GET", "POST"])
 def admin():
+    if request.method == "POST":
+        if "new_email" in request.form:
+            try:
+                new_email = request.form["new_email"]
+                new_admin = Admin(email=new_email)
+                db.session.add(new_admin)
+                db.session.commit()
+            except IntegrityError:
+                db.session.rollback()
+            return redirect(url_for("admin"))
+        elif "delete" in request.form:
+            try:
+                email_to_delete = request.form["delete"]
+                admin_to_delete = Admin.query.get_or_404(email_to_delete)
+                db.session.delete(admin_to_delete)
+                db.session.commit()
+            except IntegrityError:
+                db.session.rollback()
+            return redirect(url_for("admin"))
+
     admins = Admin.query.all()
-    admin_emails = [admin.email for admin in admins]  # Extract email addresses from Admin objects
-    return render_template("admin.html", admins=admins, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4), admin_emails=admin_emails)
+    admin_emails = [admin.email for admin in admins]
+    return render_template("admin.html", admins=admins, admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
