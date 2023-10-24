@@ -2,7 +2,7 @@ import requests
 import json
 from os import environ as env
 from hackernews import app, db
-from hackernews.models import News
+from hackernews.models import News, Admin
 from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime, timezone
 

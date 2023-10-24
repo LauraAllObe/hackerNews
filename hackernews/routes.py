@@ -13,7 +13,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime, timezone
 from hackernews import app, db
-from hackernews.models import News
+from hackernews.models import News, Admin
 
 
 #configure Authlib to handle application's authentication with Auth0
@@ -158,3 +158,11 @@ def logout():
 @app.route("/account")
 def account():
     return render_template("account.html", session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+
+
+
+@app.route("/admin")
+def admin():
+    admins = Admin.query.all()
+    admin_emails = [admin.email for admin in admins]  # Extract email addresses from Admin objects
+    return render_template("admin.html", admins=admins, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4), admin_emails=admin_emails)

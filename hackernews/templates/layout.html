@@ -42,6 +42,9 @@
 							<p class="welcome-line">Welcome {{session.userinfo.name}}!</p>
 							<a class="nav-item nav-link" href="/logout">Logout</a>
 							<a class="nav-item nav-link" href="/account">Profile</a>
+							{% if session.userinfo.email in admin_emails %}
+            							<a class="nav-item nav-link" href="/admin">Admin</a>
+        						{% endif %}
 						{% else %}
           						<a class="nav-item nav-link" href="/login">Login/Sign in</a>
 						{% endif %}

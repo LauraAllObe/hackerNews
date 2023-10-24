@@ -40,3 +40,14 @@ class News(db.Model):
             del data[key]
         return data
 
+class Admin(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(500), nullable=False, default="N/A")
+    email = db.Column(db.String(500), nullable=False, default="N/A")
+
+    def as_dict(self):
+        data = {
+                'id': self.id,
+                'name': self.name,
+                'email': self.email,
+        }
