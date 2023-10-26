@@ -63,10 +63,15 @@
         				<h3>Our Sidebar</h3>
         				<p style="color: #7f7474;" >You can put any information here you'd like.
           					<ul style="border: 1px solid #cebbbb;" class="list-group">
-            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">Latest News</li>
-            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">Announcements</li>
-            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">Calendars</li>
-            						<li style="background-color: #5a4646; color: #473636;" class="list-group-item list-group-item-light">etc</li>
+							<li style="background-color: #5a4646; color: #362525;" class="list-group-item list-group-item-light">Latest News</li>
+            						<li style="background-color: #5a4646; color: #362525;" class="list-group-item list-group-item-light">Announcements</li>
+            						<li style="background-color: #5a4646; color: #362525;" class="list-group-item list-group-item-light">Calendars</li>
+							<li style="background-color: #5a4646; color: #362525;" class="list-group-item list-group-item-light">Current Users:
+							    {% for user in users %}
+							    <p style="font-size: smaller; color: #7f7474; padding-left: 1em;">> {{ user.name }}</p>
+    							    {% endfor %}
+							</li>
+
         					</ul>
         				</p>
       				</div>

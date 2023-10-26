@@ -47,3 +47,17 @@ class Admin(db.Model):
         data = {
                 'email': self.email,
         }
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(500), nullable=False, default="N/A")
+    name = db.Column(db.String(500), nullable=False, default="N/A")
+    admin = db.Column(db.Boolean, nullable=False, default=False)
+
+    def as_dict(self):
+        data = {
+            'id': self.id,
+            'email': self.email,
+            'name': self.name,
+            'admin': self.admin
+        }

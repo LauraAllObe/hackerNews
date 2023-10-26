@@ -13,7 +13,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime, timezone
 from hackernews import app, db
-from hackernews.models import News, Admin
+from hackernews.models import News, Admin, User
 
 
 #configure Authlib to handle application's authentication with Auth0
@@ -47,8 +47,9 @@ def home():
     page = request.args.get('page', 1, type=int)
     news_items = News.query.paginate(page=page, per_page=10)
     admins = Admin.query.all()
+    users = User.query.all()
     admin_emails = [admin.email for admin in admins]
-    return render_template("home.html", admin_emails=admin_emails, news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    return render_template("home.html", users=users, admin_emails=admin_emails, news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 def fetch_news_item(item_id):
@@ -139,6 +140,39 @@ def login():
 def callback():
     token = oauth.auth0.authorize_access_token()
     session["user"] = token
+    if session.get('user'):
+        try:
+            currentSess = session.get('user')
+            try:
+                add_email = currentSess.userinfo.email
+                add_name = currentSess.userinfo.name
+            except AttributeError:
+                return f"{add_email} {add_name}"
+            user_exists = User.query.filter_by(email=currentSess.userinfo.get("email")).first()
+            admin_exists = Admin.query.filter_by(email=currentSess.userinfo.get("email")).first()
+            new_user = []
+            if admin_exists:
+                new_user = User (
+                        id=User.query.count()+1,
+                        email=add_email,
+                        name=add_name,
+                        admin=True
+                )
+            else:
+                new_user = User (
+                        id=User.query.count()+1,
+                        email=add_email,
+                        name=add_name,
+                        admin=False
+                )
+            if not user_exists:
+                try:
+                    db.session.add(new_user)
+                    db.session.commit()
+                except IntegrityError:
+                    db.session.rollback()
+        except (DatabaseError, DataError, OperationalError) as e:
+            return redirect("/DatabaseDataOrOperationalErrorOcurred")
     return redirect("/")
 
 #auth0 logout, clears session & redirect to home
@@ -161,7 +195,8 @@ def logout():
 def account():
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
-    return render_template("account.html", admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    users = User.query.all()
+    return render_template("account.html", users=users, admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 @app.route("/admin", methods=["GET", "POST"])
@@ -173,6 +208,10 @@ def admin():
                 new_admin = Admin(email=new_email)
                 db.session.add(new_admin)
                 db.session.commit()
+                user_to_update = User.query.filter_by(email=new_email).first()
+                if user_to_update:
+                    user_to_update.admin = True
+                    db.session.commit()
             except IntegrityError:
                 db.session.rollback()
             return redirect(url_for("admin"))
@@ -182,10 +221,15 @@ def admin():
                 admin_to_delete = Admin.query.get_or_404(email_to_delete)
                 db.session.delete(admin_to_delete)
                 db.session.commit()
+                user_to_update = User.query.filter_by(email=email_to_delete).first()
+                if user_to_update:
+                    user_to_update.admin = False
+                    db.session.commit()
             except IntegrityError:
                 db.session.rollback()
             return redirect(url_for("admin"))
 
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
-    return render_template("admin.html", admins=admins, admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    users = User.query.all()
+    return render_template("admin.html", users=users, admins=admins, admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
