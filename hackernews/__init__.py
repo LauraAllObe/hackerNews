@@ -10,6 +10,7 @@ from flask import Flask, render_template, request, jsonify, url_for, redirect, s
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime
+import logging
 
 #auth0 .env file recognition
 ENV_FILE = find_dotenv()
@@ -17,6 +18,12 @@ if ENV_FILE:
     load_dotenv(ENV_FILE)
 
 app = Flask(__name__)
+
+app.logger.setLevel(logging.ERROR)  # Set the minimum log level to write to the file
+
+# Create a FileHandler to write logs to a file
+file_handler = logging.FileHandler("/home/lauraallobe/hackerNews/hackernews/error.log")
+app.logger.addHandler(file_handler)
 
 #set auth0 secret key
 app.secret_key = env.get("APP_SECRET_KEY")

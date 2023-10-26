@@ -142,24 +142,25 @@ def callback():
     session["user"] = token
     if session.get('user'):
         try:
-            currentSess = session.get('user')
-            try:
-                add_email = currentSess.userinfo.email
-                add_name = currentSess.userinfo.name
-            except AttributeError:
-                return f"{add_email} {add_name}"
-            user_exists = User.query.filter_by(email=currentSess.userinfo.get("email")).first()
-            admin_exists = Admin.query.filter_by(email=currentSess.userinfo.get("email")).first()
+            userinfo = token.get('userinfo')
+            add_email = "N/A"
+            add_name = "N/A"
+            if userinfo.email:
+                add_email = userinfo.email
+            if userinfo.name:
+                add_name = userinfo.name
+            user_exists = User.query.filter_by(email=userinfo.get("email")).first()
+            admin_exists = Admin.query.filter_by(email=userinfo.get("email")).first()
             new_user = []
             if admin_exists:
-                new_user = User (
+                new_user = User(
                         id=User.query.count()+1,
                         email=add_email,
                         name=add_name,
                         admin=True
                 )
             else:
-                new_user = User (
+                new_user = User(
                         id=User.query.count()+1,
                         email=add_email,
                         name=add_name,
@@ -170,8 +171,10 @@ def callback():
                     db.session.add(new_user)
                     db.session.commit()
                 except IntegrityError:
+                    app.logger.error("IntegrityError: %s", str(e))
+                    app.logger.error("Id: %s\nEmail: %s\nName: %s\nAdmin: %s\n", str(new_user.id), str(new_user.email), str(new_user.name), str(new_user.admin))
                     db.session.rollback()
-        except (DatabaseError, DataError, OperationalError) as e:
+        except (DataError, OperationalError) as e:
             return redirect("/DatabaseDataOrOperationalErrorOcurred")
     return redirect("/")
 
