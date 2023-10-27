@@ -119,3 +119,13 @@ a.article-title:hover {
   border-radius: 3px;
 }
 
+@media (min-width: 1024px) {
+	#fixedSidebar {
+    	position: fixed;
+    	top: 10%;
+    	right: 1%;
+    	max-height: 100%;
+    	overflow-y: auto;
+    	background-color: transparent;
+	}
+}
