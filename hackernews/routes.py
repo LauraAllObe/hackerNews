@@ -13,7 +13,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime, timezone
 from hackernews import app, db
-from hackernews.models import News, Admin, User
+from hackernews.models import News, Admin, User, disLikes
 
 
 #configure Authlib to handle application's authentication with Auth0
@@ -141,41 +141,7 @@ def callback():
     token = oauth.auth0.authorize_access_token()
     session["user"] = token
     if session.get('user'):
-        try:
-            userinfo = token.get('userinfo')
-            add_email = "N/A"
-            add_name = "N/A"
-            if userinfo.email:
-                add_email = userinfo.email
-            if userinfo.name:
-                add_name = userinfo.name
-            user_exists = User.query.filter_by(email=userinfo.get("email")).first()
-            admin_exists = Admin.query.filter_by(email=userinfo.get("email")).first()
-            new_user = []
-            if admin_exists:
-                new_user = User(
-                        id=User.query.count()+1,
-                        email=add_email,
-                        name=add_name,
-                        admin=True
-                )
-            else:
-                new_user = User(
-                        id=User.query.count()+1,
-                        email=add_email,
-                        name=add_name,
-                        admin=False
-                )
-            if not user_exists:
-                try:
-                    db.session.add(new_user)
-                    db.session.commit()
-                except IntegrityError:
-                    app.logger.error("IntegrityError: %s", str(e))
-                    app.logger.error("Id: %s\nEmail: %s\nName: %s\nAdmin: %s\n", str(new_user.id), str(new_user.email), str(new_user.name), str(new_user.admin))
-                    db.session.rollback()
-        except (DataError, OperationalError) as e:
-            return redirect("/DatabaseDataOrOperationalErrorOcurred")
+        addUser(token)
     return redirect("/")
 
 #auth0 logout, clears session & redirect to home
@@ -236,3 +202,43 @@ def admin():
     admin_emails = [admin.email for admin in admins]
     users = User.query.all()
     return render_template("admin.html", users=users, admins=admins, admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+
+def addUser(token):
+    userinfo = token.get('userinfo')
+    add_email = "N/A"
+    add_name = "N/A"
+    add_nickname = None
+    if userinfo.email:
+        add_email = userinfo.email
+    if userinfo.name:
+        add_name = userinfo.name
+    if userinfo.nickname:
+        add_nickname = userinfo.nickname
+    user_exists = User.query.filter_by(email=userinfo.get("email")).first()
+    admin_exists = Admin.query.filter_by(email=userinfo.get("email")).first()
+    new_user = []
+    if admin_exists:
+        new_user = User(
+            id=User.query.count()+1,
+            email=add_email,
+            name=add_name,
+            admin=True,
+            nickname=add_nickname
+        )
+    else:
+        new_user = User(
+            id=User.query.count()+1,
+            email=add_email,
+            name=add_name,
+            admin=False,
+            nickname=add_nickname
+        )
+    if not user_exists:
+        try:
+            db.session.add(new_user)
+            db.session.commit()
+        except IntegrityError:
+            app.logger.error("IntegrityError: %s", str(e))
+            app.logger.error("Id: %s\nEmail: %s\nName: %s\nAdmin: %s\nNickname: %s\n", str(new_user.id), str(new_user.email), str(new_user.name), str(new_user.admin), str(new_user.nickname))
+            db.session.rollback()
+    return None

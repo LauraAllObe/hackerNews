@@ -1,5 +1,7 @@
 from hackernews import db
 from datetime import datetime
+from sqlalchemy import ForeignKey
+from sqlalchemy.orm import relationship
 
 class News(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -33,7 +35,7 @@ class News(db.Model):
             'dead': self.dead,
             'parent': self.parent,
             'text': self.text,
-            'kids': self.kids
+            'kids': self.kids,
         }
         keys_to_exclude = [key for key, value in data.items() if value is None]
         for key in keys_to_exclude:
@@ -53,11 +55,27 @@ class User(db.Model):
     email = db.Column(db.String(500), nullable=False, default="N/A")
     name = db.Column(db.String(500), nullable=False, default="N/A")
     admin = db.Column(db.Boolean, nullable=False, default=False)
+    nickname = db.Column(db.String(500), nullable=True)
 
     def as_dict(self):
         data = {
             'id': self.id,
             'email': self.email,
             'name': self.name,
-            'admin': self.admin
+            'admin': self.admin,
+            'nickname': self.nickname
+        }
+
+class disLikes(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    userId = db.Column(db.Integer, db.ForeignKey('user.id'))
+    newsId = db.Column(db.Integer, db.ForeignKey('news.id'))
+    liked = db.Column(db.Boolean, nullable=True)
+
+    def as_dict(self):
+        data = {
+            'id': self.id,
+            'userId': self.userId,
+            'newsId': self.newsId,
+            'liked': self.liked
         }

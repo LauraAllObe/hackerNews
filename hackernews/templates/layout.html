@@ -71,10 +71,13 @@
             						<li style="background-color: #5a4646; color: #362525; font-size: 20px" class="list-group-item list-group-item-light">Announcements:
 								<p style="font-size: 21px; color: #471d1d; padding-left: 1em; font-weight: 100;">Server is currently undergoing maintenance.</p>
 							</li>
-							<li style="background-color: #5a4646; color: #362525; font-size: 20px" class="list-group-item list-group-item-light">Current Users:
+							<li style="background-color: #5a4646; color: #362525; font-size: 20px" class="list-group-item list-group-item-light">All-time Users:
 							    {% for user in users %}
-
-							    <p style="font-size: 21px; color: #471d1d; padding-left: 1em; font-weight: 100; line-height: 0.7;">⇨  {{ user.name }}</p>
+								{% if user.nickname %}
+							    		<p style="font-size: 21px; color: #471d1d; padding-left: 1em; font-weight: 100; line-height: 0.7;">⇨  {{ user.nickname }}</p>
+								{% else %}
+									<p style="font-size: 21px; color: #471d1d; padding-left: 1em; font-weight: 100; line-height: 0.7;">⇨  {{ user.name }}</p>
+								{% endif %}
     							    {% endfor %}
 							</li>
 
