@@ -129,3 +129,22 @@ a.article-title:hover {
     	background-color: transparent;
 	}
 }
+
+.basic-table {
+	width:100%; 
+	border-collapse: separate; 
+	border-spacing: 10px 5px;
+	background-color: #362525;
+	color: #6a5858;
+	border-radius: 5px;
+}
+
+.delete-button {
+	color: #ac8888; 
+	border-color: #581e1e; 
+	background: #581e1e; 
+	height: 25px; 
+	width: 50px; 
+	font-size: 12px; 
+	padding: 0px;
+}

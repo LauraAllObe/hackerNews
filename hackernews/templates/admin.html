@@ -1,26 +1,54 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-    <h2>Admins</h2>
-    <ul>
+    <h2 class="text-center">Admins</h2>
+    <ul class="form-group d-flex align-items-center justify-content-center list-unstyled list-group">
         {% for email in admin_emails %}
-	    <ul style="margin: 0; padding: 0; list-style-type: none;"><li>
+	    <li class="list-group-item" style="background-color: transparent; margin: 0px; padding: 0px; border-color: transparent">
 		{{ email }}
                 <form method="post" style="display: inline;">
-		    <input type="hidden" name="delete" value="{{ email }}">
-                    <button style="color: #bdaaaa; border-color: #581e1e; background: #581e1e; height: 25px; width: 50px; font-size: 12px; padding: 0px;" type="submit" class="btn btn-danger">Delete</button>
+		    <input type="hidden" name="deleteAdmin" value="{{ email }}">
+                    <button type="submit" style="color: #bdaaaa"class="btn btn-danger delete-button">Delete</button>
+		    <div><p> &#10;&#13;</p></div>
                 </form>
-	    </li></ul>
+	    </li>
         {% endfor %}
     </ul>
 
-    <form method="post">
-        <div class="form-group d-flex align-items-left">
+    <form method="post" class="text-center">
+        <div class="form-group d-flex align-items-center justify-content-center">
             <input style="width: 250px; background: #dfcccc;" type="text" class="form-control form-control-sm ml-2" id="newEmail" name="new_email" placeholder="prefix@dom.ain">
             <button style="color: #bdaaaa; background: #585d63; border-color: #587474;"type="submit" class="btn btn-primary ml-2">Add</button>
         </div>
     </form>
 
 </div>
+<div class="container">
+    <h2 class="text-center">Users</h2>
+    <table class="basic-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Nickname</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.nickname }}</td>
+                    <td>
+                        <form method="post" style="display: inline;">
+                            <input type="hidden" name="deleteUser" value="{{ user.id }}">
+                            <button type="submit" class="btn btn-danger delete-button">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 {% endblock content %}
-

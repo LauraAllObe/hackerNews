@@ -313,9 +313,9 @@ def admin():
             except IntegrityError:
                 db.session.rollback()
             return redirect(url_for("admin"))
-        elif "delete" in request.form:
+        elif "deleteAdmin" in request.form:
             try:
-                email_to_delete = request.form["delete"]
+                email_to_delete = request.form["deleteAdmin"]
                 admin_to_delete = Admin.query.get_or_404(email_to_delete)
                 db.session.delete(admin_to_delete)
                 db.session.commit()
@@ -326,6 +326,17 @@ def admin():
             except IntegrityError:
                 db.session.rollback()
             return redirect(url_for("admin"))
+        elif "deleteUser" in request.form:
+            try:
+                id_to_delete = request.form["deleteUser"]
+                user_to_delete = User.query.get_or_404(id_to_delete)
+                db.session.delete(user_to_delete)
+                votes_to_delete = disLikes.query.filter_by(userId=id_to_delete).all()
+                for vote in votes_to_delete:
+                    db.session.delete(vote)
+                db.session.commit()
+            except IntegrityError:
+                db.session.rollback()
 
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
