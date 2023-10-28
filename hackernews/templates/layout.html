@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-        .welcome-line {
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
-            color: #7f7474;
-	    margin-top: 4px;
-	    margin-bottom: -4px;
-        }
-    	</style>
 	<!-- Include FullCalendar JavaScript and CSS -->
     	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	<!-- Required meta tags -->
@@ -21,14 +12,14 @@
         {% if title %}
                 <title>Hacker news - {{ title }}</title>
         {% else %}
-                <title>Hacker news home page!!!</title>
+                <title>Hacker news!</title>
         {% endif %}
 </head>
 <body>
 	<header class="site-header">
   		<nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
     			<div class="container">
-      				<a style="color: #dfcccc;"class="navbar-brand mr-4" href="/">Hacker News</a>
+      				<a class="navbar-brand mr-4" style="color: #dfcccc;" href="/">Hacker News</a>
       				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         				<span class="navbar-toggler-icon"></span>
       				</button>
@@ -60,23 +51,23 @@
       				{% block content %}{% endblock %}
 			</div>
     			<div class="col-md-4" id="fixedSidebar">
-      				<div class="content-section" style="background-color: #725b5b;">
-        				<h3>Our Sidebar</h3>
-        				<p style="color: #7f7474;" >Here is some information for your convenience.
-          					<ul style="border: 1px solid #cebbbb;" class="list-group">
-							<li style="background-color: #5a4646; color: #362525;" class="list-group-item list-group-item-light">
-								<img src="https://drive.google.com/uc?export=download&id=1rFYMkVXFo5e7IA6agjbV_EmHaWAhIS5f" style="width: 100px; height: 100px">
-								<span id="clock" style="font-size: 26px; padding-left: 5px; color: #362525; font-weight: 400;"></span>
+      				<div class="content-section news-content-section">
+        				<h3>Hacker News Sidebar</h3>
+        				<p class="sidebar-small">Here is some information for your convenience.
+          					<ul class="list-group basic-border">
+							<li class="list-group-item list-group-item-light basic-sidebar-list">
+								<img src="https://drive.google.com/uc?export=download&id=1rFYMkVXFo5e7IA6agjbV_EmHaWAhIS5f" class="gif-size">
+								<span id="clock" class="basic-clock"></span>
 							</li>	
-            						<li style="background-color: #5a4646; color: #362525; font-size: 20px" class="list-group-item list-group-item-light">Announcements:
-								<p style="font-size: 21px; color: #471d1d; padding-left: 1em; font-weight: 100;">Server is currently undergoing maintenance.</p>
+            						<li class="list-group-item list-group-item-light basic-sidebar-list">Announcements:
+								<p class="sidebar-subitem announcements">Currently working on: reorganizing functions, adding documentation, cleaning up import statements....</p>
 							</li>
-							<li style="background-color: #5a4646; color: #362525; font-size: 20px" class="list-group-item list-group-item-light">All-time Users:
+							<li class="list-group-item list-group-item-light basic-sidebar-list">All-time users:
 							    {% for user in users %}
 								{% if user.nickname %}
-							    		<p style="font-size: 21px; color: #471d1d; padding-left: 1em; font-weight: 100; line-height: 0.7;">⇨  {{ user.nickname }}</p>
+							    		<p class="sidebar-subitem">⇨  {{ user.nickname }}</p>
 								{% else %}
-									<p style="font-size: 21px; color: #471d1d; padding-left: 1em; font-weight: 100; line-height: 0.7;">⇨  {{ user.name }}</p>
+									<p class="sidebar-subitem">⇨  {{ user.name }}</p>
 								{% endif %}
     							    {% endfor %}
 							</li>

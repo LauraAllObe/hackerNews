@@ -4,11 +4,11 @@
     <h2 class="text-center">Admins</h2>
     <ul class="form-group d-flex align-items-center justify-content-center list-unstyled list-group">
         {% for email in admin_emails %}
-	    <li class="list-group-item" style="background-color: transparent; margin: 0px; padding: 0px; border-color: transparent">
+	    <li class="list-group-item remove-pre">
 		{{ email }}
-                <form method="post" style="display: inline;">
+                <form method="post" class="basic-form">
 		    <input type="hidden" name="deleteAdmin" value="{{ email }}">
-                    <button type="submit" style="color: #bdaaaa"class="btn btn-danger delete-button">Delete</button>
+                    <button type="submit" class="btn btn-danger admin-delete-button">Delete</button>
 		    <div><p> &#10;&#13;</p></div>
                 </form>
 	    </li>
@@ -17,8 +17,8 @@
 
     <form method="post" class="text-center">
         <div class="form-group d-flex align-items-center justify-content-center">
-            <input style="width: 250px; background: #dfcccc;" type="text" class="form-control form-control-sm ml-2" id="newEmail" name="new_email" placeholder="prefix@dom.ain">
-            <button style="color: #bdaaaa; background: #585d63; border-color: #587474;"type="submit" class="btn btn-primary ml-2">Add</button>
+            <input type="text" class="form-control form-control-sm ml-2 add-input-filed" id="newEmail" name="new_email" placeholder="prefix@dom.ain">
+            <button type="submit" class="btn btn-primary ml-2 admin-add-button">Add</button>
         </div>
     </form>
 
@@ -41,9 +41,9 @@
                     <td>{{ user.email }}</td>
                     <td>{{ user.nickname }}</td>
                     <td>
-                        <form method="post" style="display: inline;">
+                        <form method="post" class="basic-form">
                             <input type="hidden" name="deleteUser" value="{{ user.id }}">
-                            <button type="submit" class="btn btn-danger delete-button">Delete</button>
+                            <button type="submit" class="btn btn-danger user-delete-button">Delete</button>
                         </form>
                     </td>
                 </tr>

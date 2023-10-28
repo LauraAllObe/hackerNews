@@ -136,10 +136,10 @@ a.article-title:hover {
 	border-spacing: 10px 5px;
 	background-color: #362525;
 	color: #6a5858;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
-.delete-button {
+.user-delete-button {
 	color: #ac8888; 
 	border-color: #581e1e; 
 	background: #581e1e; 
@@ -147,4 +147,137 @@ a.article-title:hover {
 	width: 50px; 
 	font-size: 12px; 
 	padding: 0px;
+}
+
+.admin-delete-button {
+        color: #bdaaaa;
+        border-color: #581e1e;
+        background: #581e1e;
+        height: 25px;
+        width: 50px;
+        font-size: 12px;
+        padding: 0px;
+}
+
+.user-profile {
+      display: flex;
+      align-items: center;
+}
+
+.user-profile-picture {
+      margin-right: 20px; /* Add spacing between the image and text */
+}
+
+.profile-picture {
+      width: 140px; /* Adjust the size as needed */
+      height: auto; /* To maintain aspect ratio */
+      border-radius:50%
+}
+
+.user-data {
+      flex-grow: 1; /* Allows the text to expand and fill available space */
+}
+
+.remove-pre {
+	background-color: transparent; 
+	margin: 0px; 
+	padding: 0px; 
+	border-color: transparent
+}
+
+.add-input-filed {
+	width: 250px; 
+	background: #dfcccc;
+}
+
+.basic-form {
+	display: inline;
+}
+
+.admin-add-button {
+	color: #bdaaaa; 
+	background: #585d63; 
+	border-color: #587474;
+}
+
+.news-item-title {
+	clear: left;
+}
+
+.newsitem-url {
+	color: #5a4646
+}
+
+.basic-vote-list {
+	margin: 0; 
+	padding 0; 
+	list-style-type: none;
+}
+
+.basic-like-text {
+	display: inline; 
+	font-weight: bold; 
+	padding-left: 10px;
+}
+
+.basic-dislike-text {
+        display: inline;
+        font-weight: bold;
+        padding-right: 40px;
+}
+
+.basic-vote {
+	height: 22px; 
+	width: 22px;
+}
+
+.welcome-line {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: #7f7474;
+        margin-top: 4px;
+        margin-bottom: -4px;
+}
+
+.news-content-section {
+	background-color: #725b5b;
+}
+
+.sidebar-small {
+	color: #7f7474;
+}
+
+.basic-border {
+	border: 1px solid #cebbbb; 
+	border-radius: 3px;
+}
+
+.basic-sidebar-list {
+	background-color: #5a4646; 
+	color: #362525;
+	font-size: 20px;
+}
+
+.gif-size {
+	width: 100px; 
+	height: 100px;
+}
+
+.basic-clock {
+	font-size: 26px; 
+	padding-left: 5px; 
+	color: #362525; 
+	font-weight: 400;
+}
+
+.sidebar-subitem {
+	font-size: 21px; 
+	color: #471d1d; 
+	padding-left: 1em; 
+	font-weight: 100; 
+	line-height: 0.8;
+}
+
+.announcements {
+	line-height: 1;
 }

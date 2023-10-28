@@ -10,25 +10,25 @@
 					</p>
     				</div>
     				<h2 class="newsitem-title">
-					<span class="d-block" style="clear: left;">{{ news_item.title }}</span>
+					<span class="d-block news-item-title">{{ news_item.title }}</span>
 				</h2>
-  		                <p>Url: <a style="color: #5a4646;" class="newsitem_url" href="{{ news_item.url }}" target="_blank">{{ news_item.url }}</a></p>
+  		                <p>Url: <a class="newsitem-url" href="{{ news_item.url }}" target="_blank">{{ news_item.url }}</a></p>
 
-				<div><ul style="margin: 0; padding 0; list-style-type: none;"><li>
-							<form method="post" style="display: inline; font-weight: bold; padding-left: 10px; color: {{ like_font_color[news_item.id] }}">
+				<div><ul class="basic-vote-list"><li>
+							<form method="post" class="basic-like-text" style="color: {{ like_font_color[news_item.id] }}">
     						<input type="hidden" name="news_item_id" value="{{ news_item.id }}">
     						<input type="hidden" name="action" value="like"> <!-- Set the action directly -->
     						<span class="vote-count">{{ like_count[news_item.id] }}</span>
-						<button type="submit" class="image-button" style="background-color: transparent; border-color: transparent;">
-							<img src="{{ like_image_url[news_item.id] }}" alt="Like" style="height: 22px; width: 22px;">
+						<button type="submit" class="image-button remove-pre">
+							<img src="{{ like_image_url[news_item.id] }}" alt="Like" class="basic-vote">
     						</button>
 					</form>
-					<form method="post" style="display: inline; padding-right: 40px; font-weight: bold; color: {{ dislike_font_color[news_item.id] }}" class="float-right">
+					<form method="post" class="float-right basic-dislike-text" style="color: {{ dislike_font_color[news_item.id] }}">
     						<input type="hidden" name="news_item_id" value="{{ news_item.id }}">
     						<input type="hidden" name="action" value="dislike"> <!-- Set the action directly -->
     						<span class="vote-count">{{ dislike_count[news_item.id] }}</span>
-						<button type="submit" class="image-button" style="background-color: transparent; border-color: transparent;">
-							<img src="{{ dislike_image_url[news_item.id] }}" alt="Dislike" style="height: 22px; width: 22px;">
+						<button type="submit" class="image-button remove-pre">
+							<img src="{{ dislike_image_url[news_item.id] }}" alt="Dislike" class="basic-vote">
     						</button>
 					</form>
 				</li></ul></div>
@@ -46,10 +46,4 @@
 			...
 		{% endif %}
 	{% endfor %}
-	<script>
-    		function setAction(actionValue) {
-			document.getElementById("action_like").value = actionValue;
-			document.getElementById("action_dislike").value = actionValue;
-		}
-	</script>
 {% endblock content %}
