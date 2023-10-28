@@ -14,6 +14,7 @@ from sqlalchemy.orm.exc import NoResultFound
 from datetime import datetime, timezone
 from hackernews import app, db
 from hackernews.models import News, Admin, User, disLikes
+import logging
 
 
 #configure Authlib to handle application's authentication with Auth0
@@ -29,6 +30,14 @@ oauth.register(
     server_metadata_url=f'https://{env.get("AUTH0_DOMAIN")}/.well-known/openid-configuration'
 )
 
+
+app.logger.setLevel(logging.ERROR)  # Set the minimum log level to write to the file
+
+# Create a FileHandler to write logs to a file
+file_handler = logging.FileHandler("/home/lauraallobe/hackerNews/hackernews/error.log")
+app.logger.addHandler(file_handler)
+
+
 #global store the json news items (currently all from get news items)
 news_items = []
 
@@ -42,14 +51,134 @@ def unix_to_datetime(timestamp):
     return formatted_dt
 
 
-@app.route("/")
+def calculate_like_count(news_id):
+    like_count = disLikes.query.filter(disLikes.newsId == news_id, disLikes.liked == True).count()
+    return like_count
+
+
+def calculate_dislike_count(news_id):
+    dislike_count = disLikes.query.filter(disLikes.newsId == news_id, disLikes.liked == False).count()
+    return dislike_count
+
+def get_vote_color(news_id, click, needUrl, isLike):
+    token = None
+    userinfo = None
+    if session.get('user'):
+        token = session.get('user')
+        if token.get('userinfo'):
+            userinfo = token.get('userinfo')
+    existing_vote = None
+    if token and userinfo:
+        current_user = User.query.filter_by(email=userinfo.get('email')).first()
+        existing_vote = disLikes.query.filter_by(newsId=news_id, userId=current_user.id).first()
+    
+    if existing_vote != None:# and click != isLike:
+        if existing_vote.liked == isLike:
+            if existing_vote.liked == True:
+                if needUrl == True:
+                    return "https://drive.google.com/uc?id=1hbRpgYvIUnqQQMs7XcZ0iAYd-x6Sfuxt"
+                else:
+                    return "#652525"
+            elif isLike == False:
+                if needUrl == True:
+                    return "https://drive.google.com/uc?id=1SLvPE0JxqZCLdjKHHy9Rk2IT37C-Lupi"
+                else:
+                    return "#652525"
+        elif existing_vote.liked != isLike:
+            if isLike == True:
+                if needUrl == True:
+                    return "https://drive.google.com/uc?id=1YdJMSLQbmVxhA_w-GCxIljy-z9piaIHC"
+                else:
+                    return "#5f4747"
+            elif isLike == False:
+                if needUrl == True:
+                    return "https://drive.google.com/uc?id=1ieW0zHZrqfPyaW7XU1pjoWAfaZ-FQABZ"
+                else:
+                    return "#5f4747"
+    else:
+        if isLike == True:
+            if needUrl == True:
+                return "https://drive.google.com/uc?id=1YdJMSLQbmVxhA_w-GCxIljy-z9piaIHC"
+            else:
+                return "#5f4747"
+        else:
+            if needUrl == True:
+                return "https://drive.google.com/uc?id=1ieW0zHZrqfPyaW7XU1pjoWAfaZ-FQABZ"
+            else:
+                return "#5f4747"
+
+
+def changeVotes(click, current_news_id):
+    token = None
+    userinfo = None
+    if session.get('user'):
+        token = session.get('user')
+        if token.get('userinfo'):
+            userinfo = token.get('userinfo')
+    existing_vote = None
+    if token and userinfo:
+        current_user = User.query.filter_by(email=userinfo.get('email')).first()
+        existing_vote = disLikes.query.filter_by(newsId=current_news_id, userId=current_user.id).first()
+        if click == True and current_user:
+            if existing_vote != None and existing_vote.liked == True:
+                existing_vote.liked = None
+            elif existing_vote != None and (existing_vote.liked == None or existing_vote.liked == False):
+                existing_vote.liked = True
+            else:
+                existing_vote=disLikes(
+                    id=disLikes.query.count()+1,
+                    userId=current_user.id,
+                    newsId=current_news_id,
+                    liked=True
+                )
+                db.session.add(existing_vote)
+        elif click == False and current_user:
+            if existing_vote != None and existing_vote.liked == False:
+                existing_vote.liked = None
+            elif existing_vote != None and (existing_vote.liked == None or existing_vote.liked == True):
+                existing_vote.liked = False
+            else:
+                existing_vote=disLikes(
+                    id=disLikes.query.count()+1,
+                    userId=current_user.id,
+                    newsId=current_news_id,
+                    liked=False
+                )
+                db.session.add(existing_vote)
+        if current_user:
+            try:
+                db.session.commit()
+            except IntegrityError:
+                db.session.rollback()
+    return None
+
+
+@app.route("/", methods=["GET", "POST"])
 def home():
     page = request.args.get('page', 1, type=int)
     news_items = News.query.paginate(page=page, per_page=10)
+    click = {news_item.id: False for news_item in news_items.items}
+    if request.method == "POST":
+        action = request.form.get("action")
+        current_news_id = request.form.get("news_item_id")
+        app.logger.error("action: %s\n current_news_id: %s\n", str(action), str(current_news_id))
+        if action:
+            if action == "like":
+                changeVotes(True, current_news_id)
+                #click[current_news_id] = True
+            elif action == "dislike":
+                changeVotes(False, current_news_id)
+                #click[current_news_id] = False
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
+    like_font_color = {news_item.id: get_vote_color(news_item.id, click[news_item.id], False, True) for news_item in news_items.items}
+    dislike_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, False) for news_item in news_items.items}
+    dislike_font_color = {news_item.id: get_vote_color(news_item.id, click[news_item.id], False, False) for news_item in news_items.items}
     admins = Admin.query.all()
-    users = User.query.all()
     admin_emails = [admin.email for admin in admins]
-    return render_template("home.html", users=users, admin_emails=admin_emails, news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    like_count = {news_item.id: calculate_like_count(news_item.id) for news_item in news_items.items}
+    dislike_count = {news_item.id: calculate_dislike_count(news_item.id) for news_item in news_items.items}
+    users=User.query.all()
+    return render_template("home.html", users=users, like_font_color=like_font_color, like_image_url=like_image_url, dislike_font_color=dislike_font_color,dislike_image_url=dislike_image_url, like_count=like_count, dislike_count=dislike_count, admin_emails=admin_emails, news_items=news_items, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
 
 
 def fetch_news_item(item_id):

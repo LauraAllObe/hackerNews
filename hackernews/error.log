@@ -1,0 +1,178 @@
+action: dislike
+ current_news_id: None
+
+action: dislike
+ current_news_id: None
+
+action: dislike
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38030932
+
+action: like
+ current_news_id: 38030932
+
+action: like
+ current_news_id: 38030932
+
+action: like
+ current_news_id: 38030932
+
+action: like
+ current_news_id: 38030932
+
+action: like
+ current_news_id: 38030932
+
+action: dislike
+ current_news_id: 38030932
+
+action: dislike
+ current_news_id: 38030932
+
+action: like
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38026797
+
+action: like
+ current_news_id: 38026797
+
+action: like
+ current_news_id: 38027587
+
+action: like
+ current_news_id: 38027587
+
+action: dislike
+ current_news_id: 38027587
+
+action: dislike
+ current_news_id: 38027587
+
+action: like
+ current_news_id: 38027587
+
+action: like
+ current_news_id: 38027587
+
+action: dislike
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in home
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in <dictcomp>
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 76, in get_vote_color
+    if existing_vote.liked != isLike:#this is actually for like
+AttributeError: 'NoneType' object has no attribute 'liked'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in home
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in <dictcomp>
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 76, in get_vote_color
+    if existing_vote.liked != isLike:#this is actually for like
+AttributeError: 'NoneType' object has no attribute 'liked'
+action: dislike
+ current_news_id: 38032242
+
+action: dislike
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38032242
+
+action: like
+ current_news_id: 38030932
+
+action: like
+ current_news_id: 38030932
+
+action: dislike
+ current_news_id: 38030932
+
+action: dislike
+ current_news_id: 38030932
+
