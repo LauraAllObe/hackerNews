@@ -84,6 +84,44 @@ def calculate_dislike_count(news_id):
     return dislike_count
 
 
+def get_vote_color_two(existing_vote, is_like, need_image):
+    """Gets dislike and like button and text
+    color and image name.
+    Args:
+        existing_vote: boolean value of existing vote
+        need_image: boolean True if image name
+        is needed, False if color is needed.
+        is_like: boolean True if is like, False
+        if is dislike.
+    Returns: string of color in hex or image name.
+    Raises: N/A
+    """
+    image_or_color = ""
+    if existing_vote.liked == is_like:
+        if existing_vote.liked is True:
+            if need_image is True:
+                image_or_color = "red_thumbs_up.png"
+            else:
+                image_or_color = "#652525"
+        if is_like is False:
+            if need_image is True:
+                image_or_color = "red_thumbs_down.png"
+            else:
+                image_or_color = "#652525"
+    elif existing_vote.liked != is_like:
+        if is_like is True:
+            if need_image is True:
+                image_or_color = "thumbs_up.png"
+            else:
+                image_or_color = "#5f4747"
+        if is_like is False:
+            if need_image is True:
+                image_or_color = "thumbs_down.png"
+            else:
+                image_or_color = "#5f4747"
+    return image_or_color
+
+
 def get_vote_color(news_id, need_image, is_like):
     """Gets dislike and like button and text
     color and image name.
@@ -109,24 +147,7 @@ def get_vote_color(news_id, need_image, is_like):
             existing_vote = disLikes.query.filter_by(newsId=news_id, \
                     userId=current_user.id).first()    
     if existing_vote is not None:
-        if existing_vote.liked == is_like:
-            if existing_vote.liked is True:
-                if need_image is True:
-                    return "red_thumbs_up.png"
-                return "#652525"
-            if is_like is False:
-                if need_image is True:
-                    return "red_thumbs_down.png"
-                return "#652525"
-        elif existing_vote.liked != is_like:
-            if is_like is True:
-                if need_image is True:
-                    return "thumbs_up.png"
-                return "#5f4747"
-            if is_like is False:
-                if need_image is True:
-                    return "thumbs_down.png"
-                return "#5f4747"
+        return get_vote_color_two(existing_vote, is_like, need_image)
     else:
         if is_like is True:
             if need_image is True:
@@ -154,8 +175,7 @@ def change_votes(click, current_news_id):
     userinfo = None
     if session.get('user'):
         token = session.get('user')
-        if token.get('userinfo'):
-            userinfo = token.get('userinfo')
+        userinfo = token.get('userinfo')
     existing_vote = None
     if token and userinfo:
         current_user = User.query.filter_by(email=userinfo.get('email')).first()
@@ -273,8 +293,6 @@ def fetch_news_item(item_id):
     response = requests.get(item_url, timeout=60)
     if response.status_code == 200:
         return response.json()
-    else:
-        return None
 
 
 @app.route("/execute_fetch")
@@ -326,10 +344,8 @@ def fetch_news_items():
                     except IntegrityError:
                         db.session.rollback()
         return "Nothing to return here"
-    else:
-        error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
-        print(error_message)
-        return error_message, 500
+    error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
+    return error_message, 500
 
 
 @app.route("/newsfeed")
@@ -520,7 +536,6 @@ def add_user(token):
             db.session.add(new_user)
             db.session.commit()
         except IntegrityError:
-            app.logger.error("IntegrityError: %s", str(e))
             app.logger.error("Id: %s\nEmail: %s\nName: %s\nAdmin: %s\nNickname: %s\n", \
                     str(new_user.id), str(new_user.email), str(new_user.name), \
                     str(new_user.admin), str(new_user.nickname))
