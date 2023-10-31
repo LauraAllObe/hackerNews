@@ -13,7 +13,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.sql import func
 from sqlalchemy.orm import aliased
-from sqlalchemy.exc import IntegrityError
+#from sqlalchemy.exc import IntegrityError
 from sqlalchemy import desc
 import requests
 import pytz
@@ -190,7 +190,6 @@ def change_votes(click, current_news_id):
                 existing_vote.liked = True
             else:
                 existing_vote=disLikes(
-                    id=disLikes.query.count()+1,
                     userId=current_user.id,
                     newsId=current_news_id,
                     liked=True
@@ -203,7 +202,6 @@ def change_votes(click, current_news_id):
                 existing_vote.liked = False
             else:
                 existing_vote=disLikes(
-                    id=disLikes.query.count()+1,
                     userId=current_user.id,
                     newsId=current_news_id,
                     liked=False
@@ -517,17 +515,15 @@ def add_user(token):
     user_exists = User.query.filter_by(email=userinfo.get("email")).first()
     admin_exists = Admin.query.filter_by(email=userinfo.get("email")).first()
     new_user = []
-    if admin_exists:
+    if admin_exists and not user_exists:
         new_user = User(
-            id=User.query.count()+1,
             email=add_email,
             name=add_name,
             admin=True,
             nickname=add_nickname
         )
-    else:
+    elif not user_exists:
         new_user = User(
-            id=User.query.count()+1,
             email=add_email,
             name=add_name,
             admin=False,
@@ -542,4 +538,3 @@ def add_user(token):
                     str(new_user.id), str(new_user.email), str(new_user.name), \
                     str(new_user.admin), str(new_user.nickname))
             db.session.rollback()
-    return None

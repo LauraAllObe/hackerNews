@@ -2,6 +2,7 @@
 This file contains the models of the flask application.
 """
 from sqlalchemy import ForeignKey
+from sqlalchemy.orm import relationship
 from hackernews import db
 
 class News(db.Model):
