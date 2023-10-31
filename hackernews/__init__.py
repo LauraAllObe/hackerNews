@@ -1,17 +1,17 @@
 """
 This file handles everything related to initialization.
 """
-import requests
 import json
 from os import environ as env
+from datetime import datetime
+import logging
 from urllib.parse import quote_plus, urlencode
+import requests
 from authlib.integrations.flask_client import OAuth
 from dotenv import find_dotenv, load_dotenv
 from flask import Flask, render_template, request, jsonify, url_for, redirect, session
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
-from datetime import datetime
-import logging
 
 ENV_FILE = find_dotenv()
 if ENV_FILE:

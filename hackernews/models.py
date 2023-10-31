@@ -1,12 +1,30 @@
 """
 This file contains the models of the flask application.
 """
-from hackernews import db
-from datetime import datetime
 from sqlalchemy import ForeignKey
-from sqlalchemy.orm import relationship
+from hackernews import db
 
 class News(db.Model):
+    """
+    Represents a news item in the application.
+    Args:
+        db.Model: The base class for all SQLAlchemy models.
+    Kwargs: N/A
+    Attributes:
+        id (int): The unique identifier for the news item.
+        by (str): The author of the news item.
+        title (str): The title of the news item.
+        time (int): The timestamp when the news item was created.
+        url (str): The URL of the news item.
+        descendants (int): The number of descendants (comments) for the news item.
+        score (int): The score of the news item.
+        type (str): The type of the news item.
+        deleted (bool): Whether the news item is deleted.
+        dead (bool): Whether the news item is dead.
+        parent (int): The parent news item ID.
+        text (str): The text content of the news item.
+        kids (str): JSON text representing child comments of the news item.
+    """
     id = db.Column(db.Integer, primary_key=True)
     by = db.Column(db.String(100), nullable=False, default="Anonymous")
     title = db.Column(db.String(500), nullable=False, default="N/A")
@@ -49,7 +67,26 @@ class News(db.Model):
             del data[key]
         return data
 
+    def get_by(self):
+        """getter for by attribute of News class.
+        Args:
+            self: instance of News class.
+        Kwargs: N/A
+        Returns: by attribute of News class.
+        Raises: N/A
+        """
+        return self.by
+
+
 class Admin(db.Model):
+    """
+    Represents an admin user in the application.
+    Args:
+        db.Model: The base class for all SQLAlchemy models.
+    Kwargs: N/A
+    Attributes:
+        email (str): The email address of the admin user (primary key).
+    """
     email = db.Column(db.String(500), primary_key=True)
 
     def as_dict(self):
@@ -64,7 +101,30 @@ class Admin(db.Model):
                 'email': self.email,
         }
 
+    def get_email(self):
+        """getter for email attribute of Admin class.
+        Args:
+            self: instance of Admin class.
+        Kwargs: N/A
+        Returns: email attribute of Admin class.
+        Raises: N/A
+        """
+        return self.email
+
+
 class User(db.Model):
+    """
+    Represents a user in the application.
+    Args:
+        db.Model: The base class for all SQLAlchemy models.
+    Kwargs: N/A
+    Attributes:
+        id (int): The unique identifier for the user.
+        email (str): The email address of the user.
+        name (str): The name of the user.
+        admin (bool): Indicates whether the user is an admin.
+        nickname (str): The user's nickname.
+    """
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(500), nullable=False, default="N/A")
     name = db.Column(db.String(500), nullable=False, default="N/A")
@@ -87,7 +147,29 @@ class User(db.Model):
             'nickname': self.nickname
         }
 
+    def get_name(self):
+        """getter for name attribute of User class.
+        Args:
+            self: instance of User class.
+        Kwargs: N/A
+        Returns: name attribute of User class.
+        Raises: N/A
+        """
+        return self.name
+
+
 class disLikes(db.Model):
+    """
+    Represents a user's dislikes in the application.
+    Args:
+        db.Model: The base class for all SQLAlchemy models.
+    Kwargs: N/A
+    Attributes:
+        id (int): The unique identifier for the dislike.
+        userId (int): The user ID associated with the dislike.
+        newsId (int): The news item ID associated with the dislike.
+        liked (bool): Indicates whether the dislike is for a liked item.
+    """
     id = db.Column(db.Integer, primary_key=True)
     userId = db.Column(db.Integer, db.ForeignKey('user.id'))
     newsId = db.Column(db.Integer, db.ForeignKey('news.id'))
@@ -107,3 +189,13 @@ class disLikes(db.Model):
             'newsId': self.newsId,
             'liked': self.liked
         }
+
+    def get_newsId(self):
+        """getter for newsId attribute of disLikes class.
+        Args:
+            self: instance of disLikes class.
+        Kwargs: N/A
+        Returns: newsId attribute of disLikes class.
+        Raises: N/A
+        """
+        return self.newsId

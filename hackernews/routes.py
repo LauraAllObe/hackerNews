@@ -1,10 +1,9 @@
 """
 This file handles all the routes and related functions
 """
-import requests
 import json
-import pytz
-from hackernews import app
+import logging
+from datetime import datetime, timezone
 from os import environ as env
 from urllib.parse import quote_plus, urlencode
 from authlib.integrations.flask_client import OAuth
@@ -14,11 +13,12 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.sql import func
 from sqlalchemy.orm import aliased
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy import desc
-from datetime import datetime, timezone
+import requests
+import pytz
 from hackernews import app, db
 from hackernews.models import News, Admin, User, disLikes
-import logging
 
 
 oauth = OAuth(app)
@@ -161,11 +161,10 @@ def change_votes(click, current_news_id):
         current_user = User.query.filter_by(email=userinfo.get('email')).first()
         existing_vote = disLikes.query.filter_by(newsId=current_news_id, \
                 userId=current_user.id).first()
-        if click == True and current_user:
-            if existing_vote != None and existing_vote.liked == True:
+        if click is True and current_user:
+            if existing_vote is not None and existing_vote.liked is True:
                 existing_vote.liked = None
-            elif existing_vote != None and (existing_vote.liked == None \
-                    or existing_vote.liked == False):
+            elif existing_vote is not None and existing_vote.liked in (None, False):
                 existing_vote.liked = True
             else:
                 existing_vote=disLikes(
@@ -175,11 +174,10 @@ def change_votes(click, current_news_id):
                     liked=True
                 )
                 db.session.add(existing_vote)
-        elif click == False and current_user:
-            if existing_vote != None and existing_vote.liked == False:
+        elif click is False and current_user:
+            if existing_vote is not None and existing_vote.liked is False:
                 existing_vote.liked = None
-            elif existing_vote != None and (existing_vote.liked == None \
-                    or existing_vote.liked == True):
+            elif existing_vote is not None and existing_vote.liked in (None, True):
                 existing_vote.liked = False
             else:
                 existing_vote=disLikes(
@@ -272,7 +270,7 @@ def fetch_news_item(item_id):
     Raises: N/A
     """
     item_url = f"https://hacker-news.firebaseio.com/v0/item/{item_id}.json"
-    response = requests.get(item_url)
+    response = requests.get(item_url, timeout=60)
     if response.status_code == 200:
         return response.json()
     else:
@@ -291,7 +289,7 @@ def fetch_news_items():
         or add to the database.
     """
     api_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
-    response = requests.get(api_url) 
+    response = requests.get(api_url, timeout=60) 
     if response.status_code == 200:
         news_item_ids = response.json()[:50]
         for item_id in news_item_ids:
@@ -313,7 +311,8 @@ def fetch_news_items():
                             title=news_item.get("title", "N/A"),
                             time=news_item.get("time"),
                             url=news_item.get("url", "N/A"),
-                            descendants=news_item.get("descendants") if "descendants" in news_item else None,
+                            descendants=news_item.get("descendants") \
+                                    if "descendants" in news_item else None,
                             score=news_item.get("score") if "score" in news_item else None,
                             type=news_item.get("type"),
                             deleted=news_item.get("deleted") if "deleted" in news_item else None,
@@ -342,7 +341,6 @@ def newsfeed():
     Returns: json of sorted news items.
     Raises: N/A
     """
-    title = "Newsfeed"
     news_items = News.query.all()
     latest_news_items = sorted(news_items, key=lambda item: item.id, reverse=True)[:30]
     news_json = [item.as_dict() for item in latest_news_items]
@@ -403,6 +401,7 @@ def logout():
         )
     )
 
+
 @app.route("/account")
 def account():
     """Return the user's account information.
@@ -416,7 +415,9 @@ def account():
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
     users = User.query.all()
-    return render_template("account.html", users=users, admin_emails=admin_emails, session=session.get('user'), pretty=json.dumps(session.get('user'), indent=4))
+    return render_template("account.html", users=users, \
+            admin_emails=admin_emails, session=session.get('user'), \
+            pretty=json.dumps(session.get('user'), indent=4))
 
 
 @app.route("/admin", methods=["GET", "POST"])
@@ -444,7 +445,7 @@ def admin():
             except IntegrityError:
                 db.session.rollback()
             return redirect(url_for("admin"))
-        elif "deleteAdmin" in request.form:
+        if "deleteAdmin" in request.form:
             try:
                 email_to_delete = request.form["deleteAdmin"]
                 admin_to_delete = Admin.query.get_or_404(email_to_delete)
@@ -456,7 +457,7 @@ def admin():
             except IntegrityError:
                 db.session.rollback()
             return redirect(url_for("admin"))
-        elif "deleteUser" in request.form:
+        if "deleteUser" in request.form:
             try:
                 id_to_delete = request.form["deleteUser"]
                 user_to_delete = User.query.get_or_404(id_to_delete)
@@ -473,6 +474,7 @@ def admin():
     return render_template("admin.html", users=users, admins=admins, \
             admin_emails=admin_emails, session=session.get('user'), \
             pretty=json.dumps(session.get('user'), indent=4))
+
 
 def add_user(token):
     """Add user to User database.
