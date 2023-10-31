@@ -179,6 +179,8 @@ def change_votes(click, current_news_id):
     existing_vote = None
     if token and userinfo:
         current_user = User.query.filter_by(email=userinfo.get('email')).first()
+        if current_user is None:
+            return None
         existing_vote = disLikes.query.filter_by(newsId=current_news_id, \
                 userId=current_user.id).first()
         if click is True and current_user:
