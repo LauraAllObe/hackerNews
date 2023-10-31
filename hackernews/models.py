@@ -1,3 +1,6 @@
+"""
+This file contains the models of the flask application.
+"""
 from hackernews import db
 from datetime import datetime
 from sqlalchemy import ForeignKey
@@ -18,10 +21,14 @@ class News(db.Model):
     text = db.Column(db.String(2000), nullable=True)
     kids = db.Column(db.Text, nullable=True)
 
-    def __repr__(self):
-        return f"News('{self.title}','{self.date}')"
-
     def as_dict(self):
+        """json of News class.
+        Args:
+            self: instance of News class.
+        Kwargs: N/A
+        Returns: News class data as json formatted.
+        Raises: N/A
+        """
         data = {
             'id': self.id,
             'by': self.by,
@@ -46,6 +53,13 @@ class Admin(db.Model):
     email = db.Column(db.String(500), primary_key=True)
 
     def as_dict(self):
+        """json of Admin class.
+        Args:
+            self: instance of Admin class.
+        Kwargs: N/A
+        Returns: Admin class data as json formatted.
+        Raises: N/A
+        """
         data = {
                 'email': self.email,
         }
@@ -58,6 +72,13 @@ class User(db.Model):
     nickname = db.Column(db.String(500), nullable=True)
 
     def as_dict(self):
+        """json of User class.
+        Args:
+            self: instance of User class.
+        Kwargs: N/A
+        Returns: User class data as json formatted.
+        Raises: N/A
+        """
         data = {
             'id': self.id,
             'email': self.email,
@@ -73,6 +94,13 @@ class disLikes(db.Model):
     liked = db.Column(db.Boolean, nullable=True)
 
     def as_dict(self):
+        """json of disLikes class.
+        Args:
+            self: instance of disLikes class.
+        Kwargs: N/A
+        Returns: disLikes class data as json formatted.
+        Raises: N/A
+        """
         data = {
             'id': self.id,
             'userId': self.userId,

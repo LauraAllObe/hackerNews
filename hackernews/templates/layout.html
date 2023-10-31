@@ -56,11 +56,11 @@
         				<p class="sidebar-small">Here is some information for your convenience.
           					<ul class="list-group basic-border">
 							<li class="list-group-item list-group-item-light basic-sidebar-list">
-								<img src="https://drive.google.com/uc?export=download&id=1rFYMkVXFo5e7IA6agjbV_EmHaWAhIS5f" class="gif-size">
+								<img src="{{ url_for('static', filename='clock.gif') }}" class="gif-size">
 								<span id="clock" class="basic-clock"></span>
 							</li>	
             						<li class="list-group-item list-group-item-light basic-sidebar-list">Announcements:
-								<p class="sidebar-subitem announcements">Currently working on: reorganizing functions, adding documentation, cleaning up import statements....</p>
+								<p class="sidebar-subitem announcements">Currently working on: restoring functionality, pylint, pytest, report....</p>
 							</li>
 							<li class="list-group-item list-group-item-light basic-sidebar-list">All-time users:
 							    {% for user in users %}

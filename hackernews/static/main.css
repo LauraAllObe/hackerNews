@@ -281,3 +281,7 @@ a.article-title:hover {
 .announcements {
 	line-height: 1;
 }
+
+.news-url:hover {
+	color: #bdaaaa;
+}

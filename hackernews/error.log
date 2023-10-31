@@ -1,123 +1,3 @@
-action: dislike
- current_news_id: None
-
-action: dislike
- current_news_id: None
-
-action: dislike
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: like
- current_news_id: 38030932
-
-action: like
- current_news_id: 38030932
-
-action: like
- current_news_id: 38030932
-
-action: like
- current_news_id: 38030932
-
-action: like
- current_news_id: 38030932
-
-action: like
- current_news_id: 38030932
-
-action: dislike
- current_news_id: 38030932
-
-action: dislike
- current_news_id: 38030932
-
-action: like
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: like
- current_news_id: 38026797
-
-action: like
- current_news_id: 38026797
-
-action: like
- current_news_id: 38027587
-
-action: like
- current_news_id: 38027587
-
-action: dislike
- current_news_id: 38027587
-
-action: dislike
- current_news_id: 38027587
-
-action: like
- current_news_id: 38027587
-
-action: like
- current_news_id: 38027587
-
-action: dislike
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: dislike
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
 Exception on / [GET]
 Traceback (most recent call last):
   File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
@@ -128,13 +8,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in home
-    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
-  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in <dictcomp>
-    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
-  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 76, in get_vote_color
-    if existing_vote.liked != isLike:#this is actually for like
-AttributeError: 'NoneType' object has no attribute 'liked'
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in home
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in <dictcomp>
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], \
+TypeError: get_vote_color() takes 3 positional arguments but 4 were given
 Exception on / [GET]
 Traceback (most recent call last):
   File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
@@ -145,208 +23,892 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in home
-    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
-  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 194, in <dictcomp>
-    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], True, True) for news_item in news_items.items}
-  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 76, in get_vote_color
-    if existing_vote.liked != isLike:#this is actually for like
-AttributeError: 'NoneType' object has no attribute 'liked'
-action: dislike
- current_news_id: 38032242
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in home
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in <dictcomp>
+    like_image_url = {news_item.id: get_vote_color(news_item.id, click[news_item.id], \
+TypeError: get_vote_color() takes 3 positional arguments but 4 were given
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in home
+    like_image_url = {news_item.id: get_vote_color(news_item.id, \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in <dictcomp>
+    like_image_url = {news_item.id: get_vote_color(news_item.id, \
+TypeError: get_vote_color() takes 3 positional arguments but 4 were given
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in home
+    like_image_url = {news_item.id: get_vote_color(news_item.id, \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 224, in <dictcomp>
+    like_image_url = {news_item.id: get_vote_color(news_item.id, \
+TypeError: get_vote_color() takes 3 positional arguments but 4 were given
+id: 38077835
+by: AgentK20
+time: 1698710767
+title: Apple Event – October 30 [video]
+url: https://www.youtube.com/watch?v=ctkW3V0Mh-k
+
+
+id: 38077835
+by: AgentK20
+time: 1698710767
+title: Apple Event – October 30 [video]
+url: https://www.youtube.com/watch?v=ctkW3V0Mh-k
+
+
+id: 38032242
+by: sohkamyung
+time: 1698357502
+title: Trying to make sense of why Otis exploded en route to Acapulco
+url: https://theeyewall.com/trying-to-make-sense-of-why-otis-exploded-en-route-to-acapulco-this-week/
+
+
+id: 38032242
+by: sohkamyung
+time: 1698357502
+title: Trying to make sense of why Otis exploded en route to Acapulco
+url: https://theeyewall.com/trying-to-make-sense-of-why-otis-exploded-en-route-to-acapulco-this-week/
+
+
+id: 38030932
+by: bookofjoe
+time: 1698350179
+title: Takkyu-bin: Luggage forwarding in Japan
+url: https://craigmod.com/ridgeline/170/
+
+
+id: 38030932
+by: bookofjoe
+time: 1698350179
+title: Takkyu-bin: Luggage forwarding in Japan
+url: https://craigmod.com/ridgeline/170/
+
+
+id: 38027587
+by: KenRuf
+time: 1698336444
+title: How bioelectricity could regrow limbs and organs
+url: https://news.uchicago.edu/how-bioelectricity-could-regrow-limbs-and-organs
+
+
+id: 38027587
+by: KenRuf
+time: 1698336444
+title: How bioelectricity could regrow limbs and organs
+url: https://news.uchicago.edu/how-bioelectricity-could-regrow-limbs-and-organs
+
+
+id: 38026797
+by: 1970-01-01
+time: 1698333764
+title: After 28 years, SSLv2 is still not gone from the internet
+url: https://isc.sans.edu/diary/After+28+years+SSLv2+is+still+not+gone+from+the+internet+but+were+getting+there/29908
+
+
+id: 38026797
+by: 1970-01-01
+time: 1698333764
+title: After 28 years, SSLv2 is still not gone from the internet
+url: https://isc.sans.edu/diary/After+28+years+SSLv2+is+still+not+gone+from+the+internet+but+were+getting+there/29908
+
+
+id: 38021463
+by: tintinnabula
+time: 1698292841
+title: The Silent Treatment: Solitary Confinement's Unlikely Origins
+url: https://publicdomainreview.org/essay/silent-treatment/
+
+
+id: 38021463
+by: tintinnabula
+time: 1698292841
+title: The Silent Treatment: Solitary Confinement's Unlikely Origins
+url: https://publicdomainreview.org/essay/silent-treatment/
+
+
+id: 38078143
+by: josephcsible
+time: 1698712515
+title: Xbox will block third-party controllers to "preserve the console experience"
+url: https://www.nme.com/news/gaming-news/xbox-will-block-third-party-controllers-to-preserve-the-console-experience-3525752
+
+
+id: 38078143
+by: josephcsible
+time: 1698712515
+title: Xbox will block third-party controllers to "preserve the console experience"
+url: https://www.nme.com/news/gaming-news/xbox-will-block-third-party-controllers-to-preserve-the-console-experience-3525752
+
+
+id: 38078065
+by: mfiguiere
+time: 1698712229
+title: Apple unveils the new MacBook Pro featuring the M3 family of chips
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/
+
+
+id: 38078065
+by: mfiguiere
+time: 1698712229
+title: Apple unveils the new MacBook Pro featuring the M3 family of chips
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max, the most advanced chips for a PC
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max, the most advanced chips for a PC
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38077889
+by: tormeh
+time: 1698711128
+title: Android and RISC-V: What you need to know to be ready
+url: https://opensource.googleblog.com/2023/10/android-and-risc-v-what-you-need-to-know.html
+
+
+id: 38077889
+by: tormeh
+time: 1698711128
+title: Android and RISC-V: What you need to know to be ready
+url: https://opensource.googleblog.com/2023/10/android-and-risc-v-what-you-need-to-know.html
+
 
 action: dislike
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: like
- current_news_id: 38032242
-
-action: like
- current_news_id: 38030932
-
-action: like
- current_news_id: 38030932
+ current_news_id: 38077889
 
 action: dislike
- current_news_id: 38030932
+ current_news_id: 38077889
 
-action: dislike
- current_news_id: 38030932
+id: 38077835
+by: AgentK20
+time: 1698710767
+title: Apple Event – October 30 [video]
+url: https://www.youtube.com/watch?v=ctkW3V0Mh-k
+
+
+id: 38077835
+by: AgentK20
+time: 1698710767
+title: Apple Event – October 30 [video]
+url: https://www.youtube.com/watch?v=ctkW3V0Mh-k
+
+
+id: 38032242
+by: sohkamyung
+time: 1698357502
+title: Trying to make sense of why Otis exploded en route to Acapulco
+url: https://theeyewall.com/trying-to-make-sense-of-why-otis-exploded-en-route-to-acapulco-this-week/
+
+
+id: 38032242
+by: sohkamyung
+time: 1698357502
+title: Trying to make sense of why Otis exploded en route to Acapulco
+url: https://theeyewall.com/trying-to-make-sense-of-why-otis-exploded-en-route-to-acapulco-this-week/
+
+
+id: 38030932
+by: bookofjoe
+time: 1698350179
+title: Takkyu-bin: Luggage forwarding in Japan
+url: https://craigmod.com/ridgeline/170/
+
+
+id: 38030932
+by: bookofjoe
+time: 1698350179
+title: Takkyu-bin: Luggage forwarding in Japan
+url: https://craigmod.com/ridgeline/170/
+
+
+id: 38027587
+by: KenRuf
+time: 1698336444
+title: How bioelectricity could regrow limbs and organs
+url: https://news.uchicago.edu/how-bioelectricity-could-regrow-limbs-and-organs
+
+
+id: 38027587
+by: KenRuf
+time: 1698336444
+title: How bioelectricity could regrow limbs and organs
+url: https://news.uchicago.edu/how-bioelectricity-could-regrow-limbs-and-organs
+
+
+id: 38026797
+by: 1970-01-01
+time: 1698333764
+title: After 28 years, SSLv2 is still not gone from the internet
+url: https://isc.sans.edu/diary/After+28+years+SSLv2+is+still+not+gone+from+the+internet+but+were+getting+there/29908
+
+
+id: 38026797
+by: 1970-01-01
+time: 1698333764
+title: After 28 years, SSLv2 is still not gone from the internet
+url: https://isc.sans.edu/diary/After+28+years+SSLv2+is+still+not+gone+from+the+internet+but+were+getting+there/29908
+
+
+id: 38021463
+by: tintinnabula
+time: 1698292841
+title: The Silent Treatment: Solitary Confinement's Unlikely Origins
+url: https://publicdomainreview.org/essay/silent-treatment/
+
+
+id: 38021463
+by: tintinnabula
+time: 1698292841
+title: The Silent Treatment: Solitary Confinement's Unlikely Origins
+url: https://publicdomainreview.org/essay/silent-treatment/
+
+
+id: 38078143
+by: josephcsible
+time: 1698712515
+title: Xbox will block third-party controllers to "preserve the console experience"
+url: https://www.nme.com/news/gaming-news/xbox-will-block-third-party-controllers-to-preserve-the-console-experience-3525752
+
+
+id: 38078143
+by: josephcsible
+time: 1698712515
+title: Xbox will block third-party controllers to "preserve the console experience"
+url: https://www.nme.com/news/gaming-news/xbox-will-block-third-party-controllers-to-preserve-the-console-experience-3525752
+
+
+id: 38078065
+by: mfiguiere
+time: 1698712229
+title: Apple unveils the new MacBook Pro featuring the M3 family of chips
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/
+
+
+id: 38078065
+by: mfiguiere
+time: 1698712229
+title: Apple unveils the new MacBook Pro featuring the M3 family of chips
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max, the most advanced chips for a PC
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max, the most advanced chips for a PC
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38077889
+by: tormeh
+time: 1698711128
+title: Android and RISC-V: What you need to know to be ready
+url: https://opensource.googleblog.com/2023/10/android-and-risc-v-what-you-need-to-know.html
+
+
+id: 38077889
+by: tormeh
+time: 1698711128
+title: Android and RISC-V: What you need to know to be ready
+url: https://opensource.googleblog.com/2023/10/android-and-risc-v-what-you-need-to-know.html
+
+
+id: 38077684
+by: throw0101a
+time: 1698709958
+title: World's Most Popular Painter Sent His Followers After Me Because of My Review
+url: https://news.artnet.com/opinion/devon-rodriguez-parasocial-aesthetics-2380960
+
+
+id: 38077684
+by: throw0101a
+time: 1698709958
+title: World's Most Popular Painter Sent His Followers After Me Because of My Review
+url: https://news.artnet.com/opinion/devon-rodriguez-parasocial-aesthetics-2380960
+
+
+id: 38077521
+by: programd
+time: 1698709081
+title: RedPajama v2 Open Dataset with 30T Tokens for Training LLMs
+url: https://together.ai/blog/redpajama-data-v2
+
+
+id: 38077521
+by: programd
+time: 1698709081
+title: RedPajama v2 Open Dataset with 30T Tokens for Training LLMs
+url: https://together.ai/blog/redpajama-data-v2
+
+
+id: 38077502
+by: omneity
+time: 1698708981
+title: Web Scraping: Data for Everyone
+url: https://omarkama.li/blog/web-scraping-data-for-everyone
+
+
+id: 38077502
+by: omneity
+time: 1698708981
+title: Web Scraping: Data for Everyone
+url: https://omarkama.li/blog/web-scraping-data-for-everyone
+
+
+id: 38077403
+by: rbanffy
+time: 1698708401
+title: Executive Order on the Safe, Secure, and Trustworthy Development and Use of AI
+url: https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
+
+
+id: 38077403
+by: rbanffy
+time: 1698708401
+title: Executive Order on the Safe, Secure, and Trustworthy Development and Use of AI
+url: https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
+
+
+id: 38077315
+by: testingathing
+time: 1698707827
+title: I Began with Sound
+url: https://www.publicbooks.org/i-began-with-sound/
+
+
+id: 38077315
+by: testingathing
+time: 1698707827
+title: I Began with Sound
+url: https://www.publicbooks.org/i-began-with-sound/
+
+
+id: 38077262
+by: sillybilly
+time: 1698707539
+title: Ever-Enduring Dürer
+url: https://newcriterion.com/blogs/dispatch/ever-enduring-durer
+
+
+id: 38077262
+by: sillybilly
+time: 1698707539
+title: Ever-Enduring Dürer
+url: https://newcriterion.com/blogs/dispatch/ever-enduring-durer
+
+
+id: 38077149
+by: lebed2045
+time: 1698706796
+title: Crypto thief steals $4.4M in a day as toll rises from LastPass breach
+url: https://cointelegraph.com/news/lastpass-breach-hacker-steals-millions-crypto-wallets-zachxbt
+
+
+id: 38077149
+by: lebed2045
+time: 1698706796
+title: Crypto thief steals $4.4M in a day as toll rises from LastPass breach
+url: https://cointelegraph.com/news/lastpass-breach-hacker-steals-millions-crypto-wallets-zachxbt
+
+
+id: 38076981
+by: LinuxBender
+time: 1698705915
+title: "This vulnerability is now under mass exploitation." Citrix Bleed bug bites hard
+url: https://arstechnica.com/security/2023/10/critical-citrix-bleed-vulnerability-allowing-mfa-bypass-comes-under-mass-exploitation/
+
+
+id: 38076981
+by: LinuxBender
+time: 1698705915
+title: "This vulnerability is now under mass exploitation." Citrix Bleed bug bites hard
+url: https://arstechnica.com/security/2023/10/critical-citrix-bleed-vulnerability-allowing-mfa-bypass-comes-under-mass-exploitation/
+
+
+id: 38076978
+by: LinuxBender
+time: 1698705898
+title: Windows CE, Microsoft's stunted middle child, reaches end of support at 26 years
+url: https://arstechnica.com/gadgets/2023/10/windows-ce-microsofts-stunted-middle-child-reaches-end-of-support-at-26-years/
+
+
+id: 38076978
+by: LinuxBender
+time: 1698705898
+title: Windows CE, Microsoft's stunted middle child, reaches end of support at 26 years
+url: https://arstechnica.com/gadgets/2023/10/windows-ce-microsofts-stunted-middle-child-reaches-end-of-support-at-26-years/
+
+
+id: 38076931
+by: CrankyBear
+time: 1698705546
+title: You can now turn your Amazon Echo into a Wi-Fi extender
+url: https://www.zdnet.com/home-and-office/networking/you-can-now-turn-your-amazon-echo-into-a-wi-fi-extender-heres-how/
+
+
+id: 38076931
+by: CrankyBear
+time: 1698705546
+title: You can now turn your Amazon Echo into a Wi-Fi extender
+url: https://www.zdnet.com/home-and-office/networking/you-can-now-turn-your-amazon-echo-into-a-wi-fi-extender-heres-how/
+
 
 action: like
- current_news_id: 38032242
+ current_news_id: 38077262
 
 action: like
- current_news_id: 38032242
+ current_news_id: 38077262
 
-action: dislike
- current_news_id: 38032242
+got to like
+got to like
+id: 38077684
+by: throw0101a
+time: 1698709958
+title: World's Most Popular Painter Sent His Followers After Me Because of My Review
+url: https://news.artnet.com/opinion/devon-rodriguez-parasocial-aesthetics-2380960
 
-action: dislike
- current_news_id: 38032242
 
-action: like
- current_news_id: 38030932
+id: 38077684
+by: throw0101a
+time: 1698709958
+title: World's Most Popular Painter Sent His Followers After Me Because of My Review
+url: https://news.artnet.com/opinion/devon-rodriguez-parasocial-aesthetics-2380960
 
-action: like
- current_news_id: 38030932
 
-action: dislike
- current_news_id: 38030932
+id: 38077521
+by: programd
+time: 1698709081
+title: RedPajama v2 Open Dataset with 30T Tokens for Training LLMs
+url: https://together.ai/blog/redpajama-data-v2
 
-action: dislike
- current_news_id: 38030932
 
-action: like
- current_news_id: 38032242
+id: 38077521
+by: programd
+time: 1698709081
+title: RedPajama v2 Open Dataset with 30T Tokens for Training LLMs
+url: https://together.ai/blog/redpajama-data-v2
 
-action: like
- current_news_id: 38032242
 
-action: like
- current_news_id: 38032242
+id: 38077502
+by: omneity
+time: 1698708981
+title: Web Scraping: Data for Everyone
+url: https://omarkama.li/blog/web-scraping-data-for-everyone
 
-action: like
- current_news_id: 38032242
 
-action: like
- current_news_id: 38030932
+id: 38077502
+by: omneity
+time: 1698708981
+title: Web Scraping: Data for Everyone
+url: https://omarkama.li/blog/web-scraping-data-for-everyone
 
-action: like
- current_news_id: 38030932
 
-action: like
- current_news_id: 38030932
+id: 38077403
+by: rbanffy
+time: 1698708401
+title: Executive Order on the Safe, Secure, and Trustworthy Development and Use of AI
+url: https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
 
-action: like
- current_news_id: 38030932
 
-action: dislike
- current_news_id: 38026736
+id: 38077403
+by: rbanffy
+time: 1698708401
+title: Executive Order on the Safe, Secure, and Trustworthy Development and Use of AI
+url: https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
 
-action: dislike
- current_news_id: 38026736
 
-action: like
- current_news_id: 38026797
+id: 38077315
+by: testingathing
+time: 1698707827
+title: I Began with Sound
+url: https://www.publicbooks.org/i-began-with-sound/
 
-action: like
- current_news_id: 38026797
 
-action: like
- current_news_id: 38026797
+id: 38077315
+by: testingathing
+time: 1698707827
+title: I Began with Sound
+url: https://www.publicbooks.org/i-began-with-sound/
 
-action: like
- current_news_id: 38026797
 
-action: dislike
- current_news_id: 38026797
+id: 38077262
+by: sillybilly
+time: 1698707539
+title: Ever-Enduring Dürer
+url: https://newcriterion.com/blogs/dispatch/ever-enduring-durer
 
-action: dislike
- current_news_id: 38026797
 
-action: like
- current_news_id: 38020862
+id: 38077262
+by: sillybilly
+time: 1698707539
+title: Ever-Enduring Dürer
+url: https://newcriterion.com/blogs/dispatch/ever-enduring-durer
 
-action: like
- current_news_id: 38020862
 
-action: like
- current_news_id: 38020862
+id: 38077149
+by: lebed2045
+time: 1698706796
+title: Crypto thief steals $4.4M in a day as toll rises from LastPass breach
+url: https://cointelegraph.com/news/lastpass-breach-hacker-steals-millions-crypto-wallets-zachxbt
 
-action: like
- current_news_id: 38020862
 
-action: like
- current_news_id: 38020862
+id: 38077149
+by: lebed2045
+time: 1698706796
+title: Crypto thief steals $4.4M in a day as toll rises from LastPass breach
+url: https://cointelegraph.com/news/lastpass-breach-hacker-steals-millions-crypto-wallets-zachxbt
 
-action: like
- current_news_id: 38020862
 
-action: like
- current_news_id: 38018429
+id: 38076981
+by: LinuxBender
+time: 1698705915
+title: "This vulnerability is now under mass exploitation." Citrix Bleed bug bites hard
+url: https://arstechnica.com/security/2023/10/critical-citrix-bleed-vulnerability-allowing-mfa-bypass-comes-under-mass-exploitation/
 
-action: like
- current_news_id: 38018429
 
-action: like
- current_news_id: 38021463
+id: 38076981
+by: LinuxBender
+time: 1698705915
+title: "This vulnerability is now under mass exploitation." Citrix Bleed bug bites hard
+url: https://arstechnica.com/security/2023/10/critical-citrix-bleed-vulnerability-allowing-mfa-bypass-comes-under-mass-exploitation/
 
-action: like
- current_news_id: 38021463
 
-action: dislike
- current_news_id: 38032242
+id: 38076978
+by: LinuxBender
+time: 1698705898
+title: Windows CE, Microsoft's stunted middle child, reaches end of support at 26 years
+url: https://arstechnica.com/gadgets/2023/10/windows-ce-microsofts-stunted-middle-child-reaches-end-of-support-at-26-years/
 
-action: dislike
- current_news_id: 38032242
 
-action: dislike
- current_news_id: 38032242
+id: 38076978
+by: LinuxBender
+time: 1698705898
+title: Windows CE, Microsoft's stunted middle child, reaches end of support at 26 years
+url: https://arstechnica.com/gadgets/2023/10/windows-ce-microsofts-stunted-middle-child-reaches-end-of-support-at-26-years/
 
-action: dislike
- current_news_id: 38032242
 
-action: dislike
- current_news_id: 38032242
+id: 38076931
+by: CrankyBear
+time: 1698705546
+title: You can now turn your Amazon Echo into a Wi-Fi extender
+url: https://www.zdnet.com/home-and-office/networking/you-can-now-turn-your-amazon-echo-into-a-wi-fi-extender-heres-how/
 
-action: dislike
- current_news_id: 38032242
 
-action: like
- current_news_id: 38032242
+id: 38076931
+by: CrankyBear
+time: 1698705546
+title: You can now turn your Amazon Echo into a Wi-Fi extender
+url: https://www.zdnet.com/home-and-office/networking/you-can-now-turn-your-amazon-echo-into-a-wi-fi-extender-heres-how/
 
-action: like
- current_news_id: 38032242
 
-action: dislike
- current_news_id: 38030932
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max, the most advanced chips for a PC
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
 
-action: dislike
- current_news_id: 38030932
 
-action: like
- current_news_id: 38027587
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max, the most advanced chips for a PC
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
 
-action: like
- current_news_id: 38027587
 
-action: like
- current_news_id: 38030932
+id: 38077684
+by: throw0101a
+time: 1698709958
+title: World's Most Popular Painter Sent His Followers After Me Because of My Review
+url: https://news.artnet.com/opinion/devon-rodriguez-parasocial-aesthetics-2380960
 
-action: like
- current_news_id: 38030932
 
-action: like
- current_news_id: 38026797
+id: 38077684
+by: throw0101a
+time: 1698709958
+title: World's Most Popular Painter Sent His Followers After Me Because of My Review
+url: https://news.artnet.com/opinion/devon-rodriguez-parasocial-aesthetics-2380960
 
-action: like
- current_news_id: 38026797
 
-action: dislike
- current_news_id: 38026736
+id: 38077521
+by: programd
+time: 1698709081
+title: RedPajama v2 Open Dataset with 30T Tokens for Training LLMs
+url: https://together.ai/blog/redpajama-data-v2
 
-action: dislike
- current_news_id: 38026736
 
-action: dislike
- current_news_id: 38026736
+id: 38077521
+by: programd
+time: 1698709081
+title: RedPajama v2 Open Dataset with 30T Tokens for Training LLMs
+url: https://together.ai/blog/redpajama-data-v2
 
-action: dislike
- current_news_id: 38026736
 
-action: None
- current_news_id: None
+id: 38077502
+by: omneity
+time: 1698708981
+title: Web Scraping: Data for Everyone
+url: https://omarkama.li/blog/web-scraping-data-for-everyone
 
-action: None
- current_news_id: None
 
-action: dislike
- current_news_id: 38026797
+id: 38077502
+by: omneity
+time: 1698708981
+title: Web Scraping: Data for Everyone
+url: https://omarkama.li/blog/web-scraping-data-for-everyone
 
-action: dislike
- current_news_id: 38026797
+
+id: 38077403
+by: rbanffy
+time: 1698708401
+title: Executive Order on the Safe, Secure, and Trustworthy Development and Use of AI
+url: https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
+
+
+id: 38077403
+by: rbanffy
+time: 1698708401
+title: Executive Order on the Safe, Secure, and Trustworthy Development and Use of AI
+url: https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
+
+
+id: 38077315
+by: testingathing
+time: 1698707827
+title: I Began with Sound
+url: https://www.publicbooks.org/i-began-with-sound/
+
+
+id: 38077315
+by: testingathing
+time: 1698707827
+title: I Began with Sound
+url: https://www.publicbooks.org/i-began-with-sound/
+
+
+id: 38077149
+by: lebed2045
+time: 1698706796
+title: Crypto thief steals $4.4M in a day as toll rises from LastPass breach
+url: https://cointelegraph.com/news/lastpass-breach-hacker-steals-millions-crypto-wallets-zachxbt
+
+
+id: 38077149
+by: lebed2045
+time: 1698706796
+title: Crypto thief steals $4.4M in a day as toll rises from LastPass breach
+url: https://cointelegraph.com/news/lastpass-breach-hacker-steals-millions-crypto-wallets-zachxbt
+
+
+id: 38076981
+by: LinuxBender
+time: 1698705915
+title: "This vulnerability is now under mass exploitation." Citrix Bleed bug bites hard
+url: https://arstechnica.com/security/2023/10/critical-citrix-bleed-vulnerability-allowing-mfa-bypass-comes-under-mass-exploitation/
+
+
+id: 38076981
+by: LinuxBender
+time: 1698705915
+title: "This vulnerability is now under mass exploitation." Citrix Bleed bug bites hard
+url: https://arstechnica.com/security/2023/10/critical-citrix-bleed-vulnerability-allowing-mfa-bypass-comes-under-mass-exploitation/
+
+
+id: 38076978
+by: LinuxBender
+time: 1698705898
+title: Windows CE, Microsoft's stunted middle child, reaches end of support at 26 years
+url: https://arstechnica.com/gadgets/2023/10/windows-ce-microsofts-stunted-middle-child-reaches-end-of-support-at-26-years/
+
+
+id: 38076978
+by: LinuxBender
+time: 1698705898
+title: Windows CE, Microsoft's stunted middle child, reaches end of support at 26 years
+url: https://arstechnica.com/gadgets/2023/10/windows-ce-microsofts-stunted-middle-child-reaches-end-of-support-at-26-years/
+
+
+id: 38076931
+by: CrankyBear
+time: 1698705546
+title: You can now turn your Amazon Echo into a Wi-Fi extender
+url: https://www.zdnet.com/home-and-office/networking/you-can-now-turn-your-amazon-echo-into-a-wi-fi-extender-heres-how/
+
+
+id: 38076931
+by: CrankyBear
+time: 1698705546
+title: You can now turn your Amazon Echo into a Wi-Fi extender
+url: https://www.zdnet.com/home-and-office/networking/you-can-now-turn-your-amazon-echo-into-a-wi-fi-extender-heres-how/
+
+
+id: 38077889
+by: tormeh
+time: 1698711128
+title: Android and RISC-V: What you need to know to be ready
+url: https://opensource.googleblog.com/2023/10/android-and-risc-v-what-you-need-to-know.html
+
+
+id: 38077889
+by: tormeh
+time: 1698711128
+title: Android and RISC-V: What you need to know to be ready
+url: https://opensource.googleblog.com/2023/10/android-and-risc-v-what-you-need-to-know.html
+
+
+id: 38077835
+by: AgentK20
+time: 1698710767
+title: Apple Event – October 30 [video]
+url: https://www.youtube.com/watch?v=ctkW3V0Mh-k
+
+
+id: 38077835
+by: AgentK20
+time: 1698710767
+title: Apple Event – October 30 [video]
+url: https://www.youtube.com/watch?v=ctkW3V0Mh-k
+
+
+id: 38077262
+by: sillybilly
+time: 1698707539
+title: Ever-Enduring Dürer
+url: https://newcriterion.com/blogs/dispatch/ever-enduring-durer
+
+
+id: 38077262
+by: sillybilly
+time: 1698707539
+title: Ever-Enduring Dürer
+url: https://newcriterion.com/blogs/dispatch/ever-enduring-durer
+
+
+id: 38032242
+by: sohkamyung
+time: 1698357502
+title: Trying to make sense of why Otis exploded en route to Acapulco
+url: https://theeyewall.com/trying-to-make-sense-of-why-otis-exploded-en-route-to-acapulco-this-week/
+
+
+id: 38032242
+by: sohkamyung
+time: 1698357502
+title: Trying to make sense of why Otis exploded en route to Acapulco
+url: https://theeyewall.com/trying-to-make-sense-of-why-otis-exploded-en-route-to-acapulco-this-week/
+
+
+id: 38030932
+by: bookofjoe
+time: 1698350179
+title: Takkyu-bin: Luggage forwarding in Japan
+url: https://craigmod.com/ridgeline/170/
+
+
+id: 38030932
+by: bookofjoe
+time: 1698350179
+title: Takkyu-bin: Luggage forwarding in Japan
+url: https://craigmod.com/ridgeline/170/
+
+
+id: 38027587
+by: KenRuf
+time: 1698336444
+title: How bioelectricity could regrow limbs and organs
+url: https://news.uchicago.edu/how-bioelectricity-could-regrow-limbs-and-organs
+
+
+id: 38027587
+by: KenRuf
+time: 1698336444
+title: How bioelectricity could regrow limbs and organs
+url: https://news.uchicago.edu/how-bioelectricity-could-regrow-limbs-and-organs
+
+
+id: 38026797
+by: 1970-01-01
+time: 1698333764
+title: After 28 years, SSLv2 is still not gone from the internet
+url: https://isc.sans.edu/diary/After+28+years+SSLv2+is+still+not+gone+from+the+internet+but+were+getting+there/29908
+
+
+id: 38026797
+by: 1970-01-01
+time: 1698333764
+title: After 28 years, SSLv2 is still not gone from the internet
+url: https://isc.sans.edu/diary/After+28+years+SSLv2+is+still+not+gone+from+the+internet+but+were+getting+there/29908
+
+
+id: 38021463
+by: tintinnabula
+time: 1698292841
+title: The Silent Treatment: Solitary Confinement's Unlikely Origins
+url: https://publicdomainreview.org/essay/silent-treatment/
+
+
+id: 38021463
+by: tintinnabula
+time: 1698292841
+title: The Silent Treatment: Solitary Confinement's Unlikely Origins
+url: https://publicdomainreview.org/essay/silent-treatment/
+
+
+id: 38078143
+by: josephcsible
+time: 1698712515
+title: Xbox will block third-party controllers to "preserve the console experience"
+url: https://www.nme.com/news/gaming-news/xbox-will-block-third-party-controllers-to-preserve-the-console-experience-3525752
+
+
+id: 38078143
+by: josephcsible
+time: 1698712515
+title: Xbox will block third-party controllers to "preserve the console experience"
+url: https://www.nme.com/news/gaming-news/xbox-will-block-third-party-controllers-to-preserve-the-console-experience-3525752
+
+
+id: 38078065
+by: mfiguiere
+time: 1698712229
+title: Apple unveils the new MacBook Pro featuring the M3 family of chips
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/
+
+
+id: 38078065
+by: mfiguiere
+time: 1698712229
+title: Apple unveils the new MacBook Pro featuring the M3 family of chips
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/
+
 
