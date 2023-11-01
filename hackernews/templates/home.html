@@ -5,30 +5,30 @@
   			<div class="news-body">
     				<div class="news-metadata">
 					<p class="mb-0">
-						<span class="float-left">By {{ news_item.News.by }}</span>
-						<span class="float-right">{{ news_item.News.time | default("N/A") | unix_to_datetime }}</span>
+						<span class="float-left">By {{ news_item.by }}</span>
+						<span class="float-right">{{ news_item.time | default("N/A") | unix_to_datetime }}</span>
 					</p>
     				</div>
     				<h2 class="newsitem-title">
-					<span class="d-block news-item-title">{{ news_item.News.title }}</span>
+					<span class="d-block news-item-title">{{ news_item.title }}</span>
 				</h2>
-  		                <p>Url: <a class="newsitem-url news-url" href="{{ news_item.News.url }}" target="_blank">{{ news_item.News.url }}</a></p>
+  		                <p>Url: <a class="newsitem-url news-url" href="{{ news_item.url }}" target="_blank">{{ news_item.url }}</a></p>
 
 				<div><ul class="basic-vote-list"><li>
-							<form method="post" class="basic-like-text" style="color: {{ like_font_color[news_item.News.id] }}">
-    						<input type="hidden" name="news_item_id" value="{{ news_item.News.id }}">
+							<form method="post" class="basic-like-text" style="color: {{ like_font_color[news_item.id] }}">
+    						<input type="hidden" name="news_item_id" value="{{ news_item.id }}">
     						<input type="hidden" name="action" value="like">
-    						<span class="vote-count">{{ like_count[news_item.News.id] }}</span>
+    						<span class="vote-count">{{ like_count[news_item.id] }}</span>
 						<button type="submit" class="image-button remove-pre">
-							<img src="{{ url_for('static', filename=like_image_url[news_item.News.id]) }}" alt="Like" class="basic-vote">
+							<img src="{{ url_for('static', filename=like_image_url[news_item.id]) }}" alt="Like" class="basic-vote">
     						</button>
 					</form>
-					<form method="post" class="float-right basic-dislike-text" style="color: {{ dislike_font_color[news_item.News.id] }}">
-    						<input type="hidden" name="news_item_id" value="{{ news_item.News.id }}">
+					<form method="post" class="float-right basic-dislike-text" style="color: {{ dislike_font_color[news_item.id] }}">
+    						<input type="hidden" name="news_item_id" value="{{ news_item.id }}">
     						<input type="hidden" name="action" value="dislike">
-    						<span class="vote-count">{{ dislike_count[news_item.News.id] }}</span>
+    						<span class="vote-count">{{ dislike_count[news_item.id] }}</span>
 						<button type="submit" class="image-button remove-pre">
-							<img src="{{ url_for('static', filename=dislike_image_url[news_item.News.id]) }}" alt="Dislike" class="basic-vote">
+							<img src="{{ url_for('static', filename=dislike_image_url[news_item.id]) }}" alt="Dislike" class="basic-vote">
     						</button>
 					</form>
 				</li></ul></div>

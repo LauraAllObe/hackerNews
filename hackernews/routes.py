@@ -232,15 +232,14 @@ def home():
     if request.method == "POST":
         page = request.form.get("page", type=int)
         app.logger.error("page: %d\n", page)
-    news_items = db.session.query(
-        News,
-        func.count(disLikes.id).label('popularity')
-    ) \
-    .outerjoin(disLikes, disLikes.newsId == News.id) \
-    .group_by(News) \
-    .order_by(desc('popularity'), desc(News.time)) \
+    
+    #fix sorting
+    news_items = News.query \
+    .order_by(desc(News.time)) \
     .paginate(page=page, per_page=10)
-    click = {news_item.News.id: False for news_item in news_items.items}
+    #end
+
+    click = {news_item.id: False for news_item in news_items.items}
     if request.method == "POST":
         action = request.form.get("action")
         current_news_id = request.form.get("news_item_id")
@@ -255,22 +254,22 @@ def home():
                 app.logger.error("got to dislike, newsId is %d\n", str(current_news_id))
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
-    like_count = {news_item.News.id: calculate_like_count(news_item.News.id) \
+    like_count = {news_item.id: calculate_like_count(news_item.id) \
             for news_item in news_items.items}
-    dislike_count = {news_item.News.id: calculate_dislike_count(news_item.News.id) \
+    dislike_count = {news_item.id: calculate_dislike_count(news_item.id) \
             for news_item in news_items.items}
     users=User.query.all()
     for news in news_items.items:
         app.logger.error("id: %s\nby: %s\ntime: %s\ntitle: %s\nurl: %s\n\n", \
-                str(news.News.id), str(news.News.by), str(news.News.time), \
-                str(news.News.title), str(news.News.url))
-    like_image_url = {news.News.id: get_vote_color(news.News.id, True, True) \
+                str(news.id), str(news.by), str(news.time), \
+                str(news.title), str(news.url))
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
             for news in news_items.items}
-    like_font_color = {news.News.id: get_vote_color(news.News.id, False, True) \
+    like_font_color = {news.id: get_vote_color(news.id, False, True) \
             for news in news_items.items}
-    dislike_image_url = {news.News.id: get_vote_color(news.News.id, True, False) \
+    dislike_image_url = {news.id: get_vote_color(news.id, True, False) \
             for news in news_items.items}
-    dislike_font_color = {news.News.id: get_vote_color(news.News.id, False, False) \
+    dislike_font_color = {news.id: get_vote_color(news.id, False, False) \
             for news in news_items.items}
     return render_template("home.html", users=users, like_font_color=like_font_color, \
             like_image_url=like_image_url, dislike_font_color=dislike_font_color, \
@@ -474,9 +473,9 @@ def admin():
                 db.session.rollback()
             return redirect(url_for("admin"))
         if "deleteUser" in request.form:
+            id_to_delete = request.form["deleteUser"]
+            user_to_delete = User.query.get_or_404(id_to_delete)
             try:
-                id_to_delete = request.form["deleteUser"]
-                user_to_delete = User.query.get_or_404(id_to_delete)
                 db.session.delete(user_to_delete)
                 votes_to_delete = disLikes.query.filter_by(userId=id_to_delete).all()
                 for vote in votes_to_delete:

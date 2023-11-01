@@ -41,10 +41,12 @@
                     <td>{{ user.email }}</td>
                     <td>{{ user.nickname }}</td>
                     <td>
-                        <form method="post" class="basic-form">
-                            <input type="hidden" name="deleteUser" value="{{ user.id }}">
-                            <button type="submit" class="btn btn-danger user-delete-button">Delete</button>
-                        </form>
+			{% if user.email not in admin_emails %}
+                        	<form method="post" class="basic-form">
+                            		<input type="hidden" name="deleteUser" value="{{ user.id }}">
+                            		<button type="submit" class="btn btn-danger user-delete-button">Delete</button>
+				</form>
+			{% endif %}
                     </td>
                 </tr>
             {% endfor %}
