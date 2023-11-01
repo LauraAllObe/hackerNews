@@ -7,18 +7,12 @@ from datetime import datetime, timezone
 from os import environ as env
 from urllib.parse import quote_plus, urlencode
 from authlib.integrations.flask_client import OAuth
-from dotenv import find_dotenv, load_dotenv
-from flask import Flask, render_template, request, jsonify, url_for, redirect, session
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm.exc import NoResultFound
-from sqlalchemy.sql import func
-from sqlalchemy.orm import aliased
-#from sqlalchemy.exc import IntegrityError
+from flask import render_template, request, url_for, redirect, session
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy import desc
 import requests
-import pytz
 from hackernews import app, db
-from hackernews.models import News, Admin, User, disLikes
+from hackernews.models import News, Admin, User, Vote
 
 
 oauth = OAuth(app)
@@ -37,8 +31,6 @@ app.logger.setLevel(logging.ERROR)
 file_handler = logging.FileHandler("/home/lauraallobe/hackerNews/hackernews/error.log")
 app.logger.addHandler(file_handler)
 
-news_items = []
-
 
 @app.template_filter('unix_to_datetime')
 def unix_to_datetime(timestamp):
@@ -55,7 +47,8 @@ def unix_to_datetime(timestamp):
         date_time = datetime.fromtimestamp(timestamp, tz=timezone.utc)
         formatted_dt = date_time.strftime('%Y-%m-%d %H:%M:%S %Z')
         return formatted_dt
-    return "N/A"
+    timestamp = "N/A"
+    return timestamp
 
 
 def calculate_like_count(news_id):
@@ -66,8 +59,8 @@ def calculate_like_count(news_id):
     Returns: like count.
     Raises: N/A
     """
-    like_count = disLikes.query.filter(disLikes.newsId == news_id, \
-            disLikes.liked == True).count()
+    like_count = Vote.query.filter(Vote.news_id == news_id, Vote.liked == True) \
+            .count()
     return like_count
 
 
@@ -79,8 +72,8 @@ def calculate_dislike_count(news_id):
     Returns: like count.
     Raises: N/A
     """
-    dislike_count = disLikes.query.filter(disLikes.newsId == news_id, \
-            disLikes.liked == False).count()
+    dislike_count = Vote.query.filter(Vote.news_id == news_id, Vote.liked == False)\
+            .count()
     return dislike_count
 
 
@@ -98,16 +91,14 @@ def get_vote_color_two(existing_vote, is_like, need_image):
     """
     image_or_color = ""
     if existing_vote.liked == is_like:
-        if existing_vote.liked is True:
-            if need_image is True:
-                image_or_color = "red_thumbs_up.png"
-            else:
-                image_or_color = "#652525"
-        if is_like is False:
-            if need_image is True:
-                image_or_color = "red_thumbs_down.png"
-            else:
-                image_or_color = "#652525"
+        if existing_vote.liked is True and need_image is True:
+            image_or_color = "red_thumbs_up.png"
+        elif existing_vote.liked is True:
+            image_or_color = "#652525"
+        elif is_like is False and need_image is True:
+            image_or_color = "red_thumbs_down.png"
+        elif is_like is False:
+            image_or_color = "#652525"
     elif existing_vote.liked != is_like:
         if is_like is True:
             if need_image is True:
@@ -144,18 +135,19 @@ def get_vote_color(news_id, need_image, is_like):
     if token and userinfo:
         current_user = User.query.filter_by(email=userinfo.get('email')).first()
         if current_user is not None:
-            existing_vote = disLikes.query.filter_by(newsId=news_id, \
-                    userId=current_user.id).first()    
+            existing_vote = Vote.query.filter_by(news_id=news_id, user_id=current_user.id).first()    
     if existing_vote is not None:
         return get_vote_color_two(existing_vote, is_like, need_image)
+    get_image_or_color = ""
+    if is_like is True and need_image is True:
+        get_image_or_color = "thumbs_up.png"
+    elif is_like is True:
+        get_image_or_color = "#5f4747"
+    elif need_image is True:
+        get_image_or_color = "thumbs_up.png"
     else:
-        if is_like is True:
-            if need_image is True:
-                return "thumbs_up.png"
-            return "#5f4747"
-        if need_image is True:
-            return "thumbs_down.png"
-        return "#5f4747"
+        get_image_or_color = "#5f4747"
+    return get_image_or_color
 
 
 def change_votes(click, current_news_id):
@@ -173,25 +165,23 @@ def change_votes(click, current_news_id):
     """
     token = None
     userinfo = None
+    existing_vote = None
     if session.get('user'):
         token = session.get('user')
         userinfo = token.get('userinfo')
-    existing_vote = None
-    if token and userinfo:
         current_user = User.query.filter_by(email=userinfo.get('email')).first()
-        if current_user is None:
-            return None
-        existing_vote = disLikes.query.filter_by(newsId=current_news_id, \
-                userId=current_user.id).first()
+        if current_user is not None:
+            existing_vote = Vote.query.filter_by(news_id=current_news_id, \
+                    user_id=current_user.id).first()
         if click is True and current_user:
             if existing_vote is not None and existing_vote.liked is True:
                 existing_vote.liked = None
             elif existing_vote is not None and existing_vote.liked in (None, False):
                 existing_vote.liked = True
             else:
-                existing_vote=disLikes(
-                    userId=current_user.id,
-                    newsId=current_news_id,
+                existing_vote=Vote(
+                    user_id=current_user.id,
+                    news_id=current_news_id,
                     liked=True
                 )
                 db.session.add(existing_vote)
@@ -201,13 +191,13 @@ def change_votes(click, current_news_id):
             elif existing_vote is not None and existing_vote.liked in (None, True):
                 existing_vote.liked = False
             else:
-                existing_vote=disLikes(
-                    userId=current_user.id,
-                    newsId=current_news_id,
+                existing_vote=Vote(
+                    user_id=current_user.id,
+                    news_id=current_news_id,
                     liked=False
                 )
                 db.session.add(existing_vote)
-        if current_user:
+        if current_user is not None:
             try:
                 db.session.commit()
             except IntegrityError:
@@ -232,14 +222,10 @@ def home():
     if request.method == "POST":
         page = request.form.get("page", type=int)
         app.logger.error("page: %d\n", page)
-    
-    #fix sorting
     news_items = News.query \
     .order_by(desc(News.time)) \
     .paginate(page=page, per_page=10)
-    #end
-
-    click = {news_item.id: False for news_item in news_items.items}
+    #click = {news_item.id: False for news_item in news_items.items}
     if request.method == "POST":
         action = request.form.get("action")
         current_news_id = request.form.get("news_item_id")
@@ -251,7 +237,7 @@ def home():
                 app.logger.error("got to like")
             elif action == "dislike":
                 change_votes(False, current_news_id)
-                app.logger.error("got to dislike, newsId is %d\n", str(current_news_id))
+                app.logger.error("got to dislike, news_id is %d\n", str(current_news_id))
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
     like_count = {news_item.id: calculate_like_count(news_item.id) \
@@ -292,6 +278,7 @@ def fetch_news_item(item_id):
     response = requests.get(item_url, timeout=60)
     if response.status_code == 200:
         return response.json()
+    return "Nothing here"
 
 
 @app.route("/execute_fetch")
@@ -342,9 +329,6 @@ def fetch_news_items():
                         db.session.commit()
                     except IntegrityError:
                         db.session.rollback()
-        return "Nothing to return here"
-    error_message = f"Failed to fetch newsfeed data. Status code: {response.status_code}"
-    return error_message, 500
 
 
 @app.route("/newsfeed")
@@ -361,7 +345,7 @@ def newsfeed():
     news_json = [item.as_dict() for item in latest_news_items]
     if news_json and news_items:
         return news_json
-    return "Nothing to display"
+    return "Nothing here"
 
 
 @app.route("/login")
@@ -477,7 +461,7 @@ def admin():
             user_to_delete = User.query.get_or_404(id_to_delete)
             try:
                 db.session.delete(user_to_delete)
-                votes_to_delete = disLikes.query.filter_by(userId=id_to_delete).all()
+                votes_to_delete = Vote.query.filter_by(user_id=id_to_delete).all()
                 for vote in votes_to_delete:
                     db.session.delete(vote)
                 db.session.commit()

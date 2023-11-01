@@ -1,8 +1,6 @@
 """
 This file contains the models of the flask application.
 """
-from sqlalchemy import ForeignKey
-from sqlalchemy.orm import relationship
 from hackernews import db
 
 class News(db.Model):
@@ -98,8 +96,8 @@ class Admin(db.Model):
         Returns: Admin class data as json formatted.
         Raises: N/A
         """
-        data = {
-                'email': self.email,
+        return {
+                'email': self.email
         }
 
     def get_email(self):
@@ -140,7 +138,7 @@ class User(db.Model):
         Returns: User class data as json formatted.
         Raises: N/A
         """
-        data = {
+        return {
             'id': self.id,
             'email': self.email,
             'name': self.name,
@@ -159,7 +157,7 @@ class User(db.Model):
         return self.name
 
 
-class disLikes(db.Model):
+class Vote(db.Model):
     """
     Represents a user's dislikes in the application.
     Args:
@@ -167,36 +165,36 @@ class disLikes(db.Model):
     Kwargs: N/A
     Attributes:
         id (int): The unique identifier for the dislike.
-        userId (int): The user ID associated with the dislike.
-        newsId (int): The news item ID associated with the dislike.
+        user_id (int): The user ID associated with the dislike.
+        news_id (int): The news item ID associated with the dislike.
         liked (bool): Indicates whether the dislike is for a liked item.
     """
     id = db.Column(db.Integer, primary_key=True)
-    userId = db.Column(db.Integer, db.ForeignKey('user.id'))
-    newsId = db.Column(db.Integer, db.ForeignKey('news.id'))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    news_id = db.Column(db.Integer, db.ForeignKey('news.id'))
     liked = db.Column(db.Boolean, nullable=True)
 
     def as_dict(self):
-        """json of disLikes class.
+        """json of Vote class.
         Args:
-            self: instance of disLikes class.
+            self: instance of Vote class.
         Kwargs: N/A
-        Returns: disLikes class data as json formatted.
+        Returns: Vote class data as json formatted.
         Raises: N/A
         """
-        data = {
+        return {
             'id': self.id,
-            'userId': self.userId,
-            'newsId': self.newsId,
+            'user_id': self.user_id,
+            'news_id': self.news_id,
             'liked': self.liked
         }
 
-    def get_newsId(self):
-        """getter for newsId attribute of disLikes class.
+    def get_news_id(self):
+        """getter for news_id attribute of Vote class.
         Args:
-            self: instance of disLikes class.
+            self: instance of Vote class.
         Kwargs: N/A
-        Returns: newsId attribute of disLikes class.
+        Returns: news_id attribute of Vote class.
         Raises: N/A
         """
-        return self.newsId
+        return self.news_id
