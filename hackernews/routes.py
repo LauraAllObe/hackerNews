@@ -521,3 +521,4 @@ def add_user(token):
                     str(new_user.id), str(new_user.email), str(new_user.name), \
                     str(new_user.admin), str(new_user.nickname))
             db.session.rollback()
+

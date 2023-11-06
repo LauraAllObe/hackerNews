@@ -17614,3 +17614,5957 @@ title: Automata: The Extraordinary "Robots" Designed Hundreds of Years Ago [vide
 url: https://www.youtube.com/watch?v=6Nt7xLAfEPs
 
 
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38155541
+by: mooreds
+time: 1699217638
+title: Beej's Quick Guide to GDB (2009)
+url: https://beej.us/guide/bggdb/
+
+
+id: 38155541
+by: mooreds
+time: 1699217638
+title: Beej's Quick Guide to GDB (2009)
+url: https://beej.us/guide/bggdb/
+
+
+id: 38155528
+by: jstanley
+time: 1699217488
+title: Automata: The Extraordinary "Robots" Designed Hundreds of Years Ago [video]
+url: https://www.youtube.com/watch?v=6Nt7xLAfEPs
+
+
+id: 38155528
+by: jstanley
+time: 1699217488
+title: Automata: The Extraordinary "Robots" Designed Hundreds of Years Ago [video]
+url: https://www.youtube.com/watch?v=6Nt7xLAfEPs
+
+
+Exception on /execute_fetch [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'fetch_news_items' did not return a valid response. The function either returned None or ended without a return statement.
+Exception on /execute_fetch [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'fetch_news_items' did not return a valid response. The function either returned None or ended without a return statement.
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38081637
+by: fidrelity
+time: 1698740587
+title: Neutral Monism
+url: https://en.wikipedia.org/wiki/Neutral_monism
+
+
+id: 38081637
+by: fidrelity
+time: 1698740587
+title: Neutral Monism
+url: https://en.wikipedia.org/wiki/Neutral_monism
+
+
+id: 38081636
+by: ofou
+time: 1698740582
+title: Optical or Digital: Minimum focusing distance on iPhone 15 Pro Max 5x camera
+url: https://davidnelson.net/2023/10/minimum-focusing-distance-on-iphone-15-pro-max-5x-camera/
+
+
+id: 38081636
+by: ofou
+time: 1698740582
+title: Optical or Digital: Minimum focusing distance on iPhone 15 Pro Max 5x camera
+url: https://davidnelson.net/2023/10/minimum-focusing-distance-on-iphone-15-pro-max-5x-camera/
+
+
+id: 38080951
+by: protontypes
+time: 1698733245
+title: A modern, open-source spreadsheet that goes beyond the grid
+url: https://github.com/gristlabs/grist-core
+
+
+id: 38080951
+by: protontypes
+time: 1698733245
+title: A modern, open-source spreadsheet that goes beyond the grid
+url: https://github.com/gristlabs/grist-core
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38074276
+by: zdw
+time: 1698693161
+title: Mini-08 single-board computer based on the 8008 CPU [video]
+url: https://www.youtube.com/watch?v=oFVjI7945CU
+
+
+id: 38074276
+by: zdw
+time: 1698693161
+title: Mini-08 single-board computer based on the 8008 CPU [video]
+url: https://www.youtube.com/watch?v=oFVjI7945CU
+
+
+id: 38063687
+by: brandonlc
+time: 1698620198
+title: Life lessons from the death bed
+url: https://isonomiaquarterly.com/archive/volume-1-issue-2/life-lessons-from-the-death-bed/
+
+
+id: 38063687
+by: brandonlc
+time: 1698620198
+title: Life lessons from the death bed
+url: https://isonomiaquarterly.com/archive/volume-1-issue-2/life-lessons-from-the-death-bed/
+
+
+id: 38060517
+by: rbanffy
+time: 1698599118
+title: Atari Video Music
+url: https://en.wikipedia.org/wiki/Atari_Video_Music
+
+
+id: 38060517
+by: rbanffy
+time: 1698599118
+title: Atari Video Music
+url: https://en.wikipedia.org/wiki/Atari_Video_Music
+
+
+id: 38059047
+by: app4soft
+time: 1698590527
+title: RattleCAD
+url: https://archive.org/details/rattlecad
+
+
+id: 38059047
+by: app4soft
+time: 1698590527
+title: RattleCAD
+url: https://archive.org/details/rattlecad
+
+
+id: 38058843
+by: softwaredoug
+time: 1698588847
+title: Tao Te Ching – Gia-Fu Feng, Jane English Translation (1989)
+url: https://terebess.hu/english/tao/gia.html
+
+
+id: 38058843
+by: softwaredoug
+time: 1698588847
+title: Tao Te Ching – Gia-Fu Feng, Jane English Translation (1989)
+url: https://terebess.hu/english/tao/gia.html
+
+
+id: 38099823
+by: tosh
+time: 1698853438
+title: MistralLite by Amazon Web Services
+url: https://huggingface.co/amazon/MistralLite
+
+
+id: 38099823
+by: tosh
+time: 1698853438
+title: MistralLite by Amazon Web Services
+url: https://huggingface.co/amazon/MistralLite
+
+
+id: 38099726
+by: todsacerdoti
+time: 1698853086
+title: Clowns to the Left of me, Jokers to the Right (2008) [pdf]
+url: https://personal.cis.strath.ac.uk/conor.mcbride/Dissect.pdf
+
+
+id: 38099726
+by: todsacerdoti
+time: 1698853086
+title: Clowns to the Left of me, Jokers to the Right (2008) [pdf]
+url: https://personal.cis.strath.ac.uk/conor.mcbride/Dissect.pdf
+
+
+id: 38099633
+by: jruohonen
+time: 1698852707
+title: The Most Dangerous Codec in the World [pdf]
+url: https://www.usenix.org/system/files/usenixsecurity23-vasquez_1.pdf
+
+
+id: 38099633
+by: jruohonen
+time: 1698852707
+title: The Most Dangerous Codec in the World [pdf]
+url: https://www.usenix.org/system/files/usenixsecurity23-vasquez_1.pdf
+
+
+id: 38099506
+by: Brajeshwar
+time: 1698852294
+title: Facing 110 years in prison, Sam Bankman-Fried "can't recall" what he did at FTX
+url: https://arstechnica.com/tech-policy/2023/10/facing-110-years-in-prison-sam-bankman-fried-cant-recall-what-he-did-at-ftx/
+
+
+id: 38099506
+by: Brajeshwar
+time: 1698852294
+title: Facing 110 years in prison, Sam Bankman-Fried "can't recall" what he did at FTX
+url: https://arstechnica.com/tech-policy/2023/10/facing-110-years-in-prison-sam-bankman-fried-cant-recall-what-he-did-at-ftx/
+
+
+id: 38099448
+by: tosh
+time: 1698852091
+title: First Benchmark Results Surface for M3 Chip in New Macs
+url: https://www.macrumors.com/2023/11/01/m3-chip-benchmark-results/
+
+
+id: 38099448
+by: tosh
+time: 1698852091
+title: First Benchmark Results Surface for M3 Chip in New Macs
+url: https://www.macrumors.com/2023/11/01/m3-chip-benchmark-results/
+
+
+id: 38099251
+by: jamez
+time: 1698851340
+title: Show HN: A Sign In Space – simulating a message from ET
+url: https://asignin.space/
+
+
+id: 38099251
+by: jamez
+time: 1698851340
+title: Show HN: A Sign In Space – simulating a message from ET
+url: https://asignin.space/
+
+
+id: 38099145
+by: openquery
+time: 1698850991
+title: Htmx, Rust and Shuttle: A New Rapid Prototyping Stack
+url: https://www.shuttle.rs/blog/2023/10/25/htmx-with-rust
+
+
+id: 38099145
+by: openquery
+time: 1698850991
+title: Htmx, Rust and Shuttle: A New Rapid Prototyping Stack
+url: https://www.shuttle.rs/blog/2023/10/25/htmx-with-rust
+
+
+id: 38099061
+by: vadman97
+time: 1698850755
+title: The Performance Impact of Session Replay: What We Found
+url: https://www.highlight.io/blog/session-replay-performance
+
+
+id: 38099061
+by: vadman97
+time: 1698850755
+title: The Performance Impact of Session Replay: What We Found
+url: https://www.highlight.io/blog/session-replay-performance
+
+
+id: 38098779
+by: bookofjoe
+time: 1698849513
+title: Why doctors in America earn so much
+url: https://www.economist.com/united-states/2023/10/31/why-doctors-in-america-earn-so-much
+
+
+id: 38098779
+by: bookofjoe
+time: 1698849513
+title: Why doctors in America earn so much
+url: https://www.economist.com/united-states/2023/10/31/why-doctors-in-america-earn-so-much
+
+
+id: 38098740
+by: Brajeshwar
+time: 1698849351
+title: NASA Tech Breathes Life into Potentially Game-Changing Antenna Design
+url: https://www.eenewseurope.com/en/from-chocolate-pudding-to-new-antenna-design/
+
+
+id: 38098740
+by: Brajeshwar
+time: 1698849351
+title: NASA Tech Breathes Life into Potentially Game-Changing Antenna Design
+url: https://www.eenewseurope.com/en/from-chocolate-pudding-to-new-antenna-design/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: like
+ current_news_id: 38157466
+
+action: like
+ current_news_id: 38157466
+
+got to like
+got to like
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: dislike
+ current_news_id: 38157145
+
+action: dislike
+ current_news_id: 38157145
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in home
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 252, in <dictcomp>
+    like_image_url = {news.id: get_vote_color(news.id, True, True) \
+  File "/home/lauraallobe/hackerNews/hackernews/routes.py", line 142, in get_vote_color
+    if is_like is True and need_image is True and current_user is not None:
+UnboundLocalError: local variable 'current_user' referenced before assignment
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: like
+ current_news_id: 38157466
+
+action: like
+ current_news_id: 38157466
+
+got to like
+got to like
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: dislike
+ current_news_id: 38157145
+
+action: dislike
+ current_news_id: 38157145
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: dislike
+ current_news_id: 38157466
+
+action: dislike
+ current_news_id: 38157466
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: dislike
+ current_news_id: 38157466
+
+action: dislike
+ current_news_id: 38157466
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: like
+ current_news_id: 38157466
+
+action: like
+ current_news_id: 38157466
+
+got to like
+got to like
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+action: like
+ current_news_id: 38157120
+
+action: like
+ current_news_id: 38157120
+
+got to like
+got to like
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155723
+by: stareatgoats
+time: 1699219007
+title: Solar energy storage breakthrough could make households self-sufficient
+url: https://sifted.eu/articles/solar-energy-breakthrough-solid-hydrogen
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38155544
+by: rudasn
+time: 1699217673
+title: Show HN: WireHub – easily create and share WireGuard networks
+url: https://www.wirehub.org/
+
+
+id: 38155541
+by: mooreds
+time: 1699217638
+title: Beej's Quick Guide to GDB (2009)
+url: https://beej.us/guide/bggdb/
+
+
+id: 38155541
+by: mooreds
+time: 1699217638
+title: Beej's Quick Guide to GDB (2009)
+url: https://beej.us/guide/bggdb/
+
+
+id: 38155528
+by: jstanley
+time: 1699217488
+title: Automata: The Extraordinary "Robots" Designed Hundreds of Years Ago [video]
+url: https://www.youtube.com/watch?v=6Nt7xLAfEPs
+
+
+id: 38155528
+by: jstanley
+time: 1699217488
+title: Automata: The Extraordinary "Robots" Designed Hundreds of Years Ago [video]
+url: https://www.youtube.com/watch?v=6Nt7xLAfEPs
+
+
+id: 38155384
+by: simonebrunozzi
+time: 1699216481
+title: Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA [video]
+url: https://www.youtube.com/watch?v=VeH7qKZr0WI
+
+
+id: 38155384
+by: simonebrunozzi
+time: 1699216481
+title: Balaji Srinivasan: How to Fix Government, Twitter, Science, and the FDA [video]
+url: https://www.youtube.com/watch?v=VeH7qKZr0WI
+
+
+id: 38155345
+by: ed_westin
+time: 1699216266
+title: Test browser for web tracking – EFF
+url: https://coveryourtracks.eff.org/
+
+
+id: 38155345
+by: ed_westin
+time: 1699216266
+title: Test browser for web tracking – EFF
+url: https://coveryourtracks.eff.org/
+
+
+id: 38155251
+by: johnyzee
+time: 1699215734
+title: Opium production in Afghanistan drops by 95%: UN report
+url: https://www.unodc.org/documents/crop-monitoring/Afghanistan/Afghanistan_opium_survey_2023.pdf
+
+
+id: 38155251
+by: johnyzee
+time: 1699215734
+title: Opium production in Afghanistan drops by 95%: UN report
+url: https://www.unodc.org/documents/crop-monitoring/Afghanistan/Afghanistan_opium_survey_2023.pdf
+
+
+id: 38155231
+by: belter
+time: 1699215629
+title: Consumers are paying more than ever for streaming TV each month
+url: https://finance.yahoo.com/news/consumers-paying-more-ever-streaming-181821039.html
+
+
+id: 38155231
+by: belter
+time: 1699215629
+title: Consumers are paying more than ever for streaming TV each month
+url: https://finance.yahoo.com/news/consumers-paying-more-ever-streaming-181821039.html
+
+
+id: 38155158
+by: jjgreen
+time: 1699215174
+title: What Happens When Your 11-Year-Old Says No to a Smartphone? (2019)
+url: https://www.vogue.com/article/parentings-new-frontier-no-smartphones
+
+
+id: 38155158
+by: jjgreen
+time: 1699215174
+title: What Happens When Your 11-Year-Old Says No to a Smartphone? (2019)
+url: https://www.vogue.com/article/parentings-new-frontier-no-smartphones
+
+
+id: 38154869
+by: rntn
+time: 1699213545
+title: Developing AI models or giant GPU clusters? Uncle Sam would like a word
+url: https://www.theregister.com/2023/11/05/biden_ai_reporting_thresholds/
+
+
+id: 38154869
+by: rntn
+time: 1699213545
+title: Developing AI models or giant GPU clusters? Uncle Sam would like a word
+url: https://www.theregister.com/2023/11/05/biden_ai_reporting_thresholds/
+
+
+id: 38154702
+by: klelatti
+time: 1699212616
+title: Intel vs. NEC: The Case of the V20's Microcode
+url: https://thechipletter.substack.com/p/intel-vs-nec-the-case-of-the-v20s
+
+
+id: 38154702
+by: klelatti
+time: 1699212616
+title: Intel vs. NEC: The Case of the V20's Microcode
+url: https://thechipletter.substack.com/p/intel-vs-nec-the-case-of-the-v20s
+
+
+id: 38154431
+by: belltaco
+time: 1699211074
+title: Hundreds demonstrate against high rents in Zurich
+url: https://www.swissinfo.ch/eng/business/hundreds-demonstrate-against-high-rents-in-zurich/48953360
+
+
+id: 38154431
+by: belltaco
+time: 1699211074
+title: Hundreds demonstrate against high rents in Zurich
+url: https://www.swissinfo.ch/eng/business/hundreds-demonstrate-against-high-rents-in-zurich/48953360
+
+
+id: 38154334
+by: hackandthink
+time: 1699210570
+title: Weakness Is Lethal: Why Putin Invaded Ukraine and How the War Must End
+url: https://www.understandingwar.org/backgrounder/weakness-lethal-why-putin-invaded-ukraine-and-how-war-must-end
+
+
+id: 38154334
+by: hackandthink
+time: 1699210570
+title: Weakness Is Lethal: Why Putin Invaded Ukraine and How the War Must End
+url: https://www.understandingwar.org/backgrounder/weakness-lethal-why-putin-invaded-ukraine-and-how-war-must-end
+
+
+id: 38154161
+by: bookofjoe
+time: 1699209708
+title: Apple hunter Tom Brown finds and saves rare Apple varieties
+url: https://www.washingtonpost.com/lifestyle/2023/11/04/apple-hunter-tom-brown/
+
+
+id: 38154161
+by: bookofjoe
+time: 1699209708
+title: Apple hunter Tom Brown finds and saves rare Apple varieties
+url: https://www.washingtonpost.com/lifestyle/2023/11/04/apple-hunter-tom-brown/
+
+
+id: 38154045
+by: harry247
+time: 1699209084
+title: Website is hosted on ESP32 ($3 chip)
+url: https://esp.khalsalabs.com
+
+
+id: 38154045
+by: harry247
+time: 1699209084
+title: Website is hosted on ESP32 ($3 chip)
+url: https://esp.khalsalabs.com
+
+
+id: 38153672
+by: haltist
+time: 1699207394
+title: In a cameras-everywhere culture, science fiction becomes reality (2015)
+url: https://www.latimes.com/business/la-fi-0411-cameras-everywhere-20150412-story.html
+
+
+id: 38153672
+by: haltist
+time: 1699207394
+title: In a cameras-everywhere culture, science fiction becomes reality (2015)
+url: https://www.latimes.com/business/la-fi-0411-cameras-everywhere-20150412-story.html
+
+
+id: 38153585
+by: Emigre_
+time: 1699206912
+title: W3C Community Group Draft Report – WebGPU Explainer
+url: https://gpuweb.github.io/gpuweb/explainer/
+
+
+id: 38153585
+by: Emigre_
+time: 1699206912
+title: W3C Community Group Draft Report – WebGPU Explainer
+url: https://gpuweb.github.io/gpuweb/explainer/
+
+
+id: 38153573
+by: paavohtl
+time: 1699206847
+title: Why Cities: Skylines 2 performs poorly
+url: https://blog.paavo.me/cities-skylines-2-performance/
+
+
+id: 38153573
+by: paavohtl
+time: 1699206847
+title: Why Cities: Skylines 2 performs poorly
+url: https://blog.paavo.me/cities-skylines-2-performance/
+
+
+id: 38153318
+by: rmhsilva
+time: 1699205400
+title: What is Glamorous Toolkit v1.0?
+url: https://lepiter.io/feenk/what-exactly-is-glamorous-toolkit-v1-0--7sex44dze2dqlocqxwfz8ju0i/
+
+
+id: 38153318
+by: rmhsilva
+time: 1699205400
+title: What is Glamorous Toolkit v1.0?
+url: https://lepiter.io/feenk/what-exactly-is-glamorous-toolkit-v1-0--7sex44dze2dqlocqxwfz8ju0i/
+
+
+id: 38153309
+by: caleb_thompson
+time: 1699205327
+title: See the History of a Method with Git log -L
+url: https://calebhearth.com/git-method-history
+
+
+id: 38153309
+by: caleb_thompson
+time: 1699205327
+title: See the History of a Method with Git log -L
+url: https://calebhearth.com/git-method-history
+
+
+id: 38153091
+by: LinuxBender
+time: 1699204246
+title: Brits make Amazon, Meta stop using third-party data to undercut rivals
+url: https://www.theregister.com/2023/11/04/amazon_meta_cma/
+
+
+id: 38153091
+by: LinuxBender
+time: 1699204246
+title: Brits make Amazon, Meta stop using third-party data to undercut rivals
+url: https://www.theregister.com/2023/11/04/amazon_meta_cma/
+
+
+id: 38153003
+by: jlpcsl
+time: 1699203886
+title: Sam Bankman-Fried is a feature, not a bug
+url: https://joanwestenberg.com/blog/sam-bankman-fried-is-a-feature-not-a-bug
+
+
+id: 38153003
+by: jlpcsl
+time: 1699203886
+title: Sam Bankman-Fried is a feature, not a bug
+url: https://joanwestenberg.com/blog/sam-bankman-fried-is-a-feature-not-a-bug
+
+
+id: 38152924
+by: rntn
+time: 1699203453
+title: AI companies have all kinds of arguments against paying for copyrighted content
+url: https://www.theverge.com/2023/11/4/23946353/generative-ai-copyright-training-data-openai-microsoft-google-meta-stabilityai
+
+
+id: 38152924
+by: rntn
+time: 1699203453
+title: AI companies have all kinds of arguments against paying for copyrighted content
+url: https://www.theverge.com/2023/11/4/23946353/generative-ai-copyright-training-data-openai-microsoft-google-meta-stabilityai
+
+
+id: 38152534
+by: cxrlosfx
+time: 1699201475
+title: Dengue rates plunged after release of lab-altered mosquitoes
+url: https://www.dw.com/en/dengue-rates-plummeted-in-colombia-after-lab-infected-mosquito-release/a-67268943
+
+
+id: 38152534
+by: cxrlosfx
+time: 1699201475
+title: Dengue rates plunged after release of lab-altered mosquitoes
+url: https://www.dw.com/en/dengue-rates-plummeted-in-colombia-after-lab-infected-mosquito-release/a-67268943
+
+
+id: 38152475
+by: TheIronYuppie
+time: 1699201199
+title: Montreal Built a Blueprint for Bargain Rapid Transit at C$119M per KM
+url: https://www.bloomberg.com/news/articles/2023-10-30/how-montreal-s-new-rapid-transit-line-saved-millions-per-mile
+
+
+id: 38152475
+by: TheIronYuppie
+time: 1699201199
+title: Montreal Built a Blueprint for Bargain Rapid Transit at C$119M per KM
+url: https://www.bloomberg.com/news/articles/2023-10-30/how-montreal-s-new-rapid-transit-line-saved-millions-per-mile
+
+
+id: 38152393
+by: belter
+time: 1699200857
+title: Tractor Beams Are Real, and Could Solve a Major Space Junk Problem
+url: https://www.livescience.com/space/space-exploration/sci-fi-inspired-tractor-beams-are-real-and-could-solve-the-major-problem-of-space-junk
+
+
+id: 38152393
+by: belter
+time: 1699200857
+title: Tractor Beams Are Real, and Could Solve a Major Space Junk Problem
+url: https://www.livescience.com/space/space-exploration/sci-fi-inspired-tractor-beams-are-real-and-could-solve-the-major-problem-of-space-junk
+
+
+id: 38152380
+by: michidk
+time: 1699200790
+title: Munich train departures CLI app written in Rust
+url: https://github.com/FaisalBinAhmed/MVGFahrinfo
+
+
+id: 38152380
+by: michidk
+time: 1699200790
+title: Munich train departures CLI app written in Rust
+url: https://github.com/FaisalBinAhmed/MVGFahrinfo
+
+
+id: 38152272
+by: simonebrunozzi
+time: 1699200067
+title: Teflon is still toxic to birds
+url: https://www.teflon.com/en/consumers/teflon-coatings-cookware-bakeware/safety/bird-safety
+
+
+id: 38152272
+by: simonebrunozzi
+time: 1699200067
+title: Teflon is still toxic to birds
+url: https://www.teflon.com/en/consumers/teflon-coatings-cookware-bakeware/safety/bird-safety
+
+
+id: 38152109
+by: ekzhang
+time: 1699199063
+title: Show HN: Sshx, a web-based collaborative terminal
+url: https://github.com/ekzhang/sshx
+
+
+id: 38152109
+by: ekzhang
+time: 1699199063
+title: Show HN: Sshx, a web-based collaborative terminal
+url: https://github.com/ekzhang/sshx
+
+
+id: 38151995
+by: Tajnymag
+time: 1699198499
+title: Brave appears to install VPN Services without user consent
+url: https://ghacks.net/2023/10/18/brave-is-installing-vpn-services-without-user-consent/
+
+
+id: 38151995
+by: Tajnymag
+time: 1699198499
+title: Brave appears to install VPN Services without user consent
+url: https://ghacks.net/2023/10/18/brave-is-installing-vpn-services-without-user-consent/
+
+
+id: 38058843
+by: softwaredoug
+time: 1698588847
+title: Tao Te Ching – Gia-Fu Feng, Jane English Translation (1989)
+url: https://terebess.hu/english/tao/gia.html
+
+
+id: 38058843
+by: softwaredoug
+time: 1698588847
+title: Tao Te Ching – Gia-Fu Feng, Jane English Translation (1989)
+url: https://terebess.hu/english/tao/gia.html
+
+
+id: 38083484
+by: louison11
+time: 1698753898
+title: I've overlayed stays on a light pollution satellite map
+url: https://darkhotels.co
+
+
+id: 38083484
+by: louison11
+time: 1698753898
+title: I've overlayed stays on a light pollution satellite map
+url: https://darkhotels.co
+
+
+id: 38082938
+by: wmlive
+time: 1698750424
+title: Boot legacy PCs from NVMe storage
+url: https://github.com/Manawyrm/nvme-int13h-optionrom
+
+
+id: 38082938
+by: wmlive
+time: 1698750424
+title: Boot legacy PCs from NVMe storage
+url: https://github.com/Manawyrm/nvme-int13h-optionrom
+
+
+id: 38081637
+by: fidrelity
+time: 1698740587
+title: Neutral Monism
+url: https://en.wikipedia.org/wiki/Neutral_monism
+
+
+id: 38081637
+by: fidrelity
+time: 1698740587
+title: Neutral Monism
+url: https://en.wikipedia.org/wiki/Neutral_monism
+
+
+id: 38081636
+by: ofou
+time: 1698740582
+title: Optical or Digital: Minimum focusing distance on iPhone 15 Pro Max 5x camera
+url: https://davidnelson.net/2023/10/minimum-focusing-distance-on-iphone-15-pro-max-5x-camera/
+
+
+id: 38081636
+by: ofou
+time: 1698740582
+title: Optical or Digital: Minimum focusing distance on iPhone 15 Pro Max 5x camera
+url: https://davidnelson.net/2023/10/minimum-focusing-distance-on-iphone-15-pro-max-5x-camera/
+
+
+id: 38080951
+by: protontypes
+time: 1698733245
+title: A modern, open-source spreadsheet that goes beyond the grid
+url: https://github.com/gristlabs/grist-core
+
+
+id: 38080951
+by: protontypes
+time: 1698733245
+title: A modern, open-source spreadsheet that goes beyond the grid
+url: https://github.com/gristlabs/grist-core
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38078063
+by: ehPReth
+time: 1698712214
+title: Apple unveils M3, M3 Pro, and M3 Max
+url: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+
+
+id: 38074276
+by: zdw
+time: 1698693161
+title: Mini-08 single-board computer based on the 8008 CPU [video]
+url: https://www.youtube.com/watch?v=oFVjI7945CU
+
+
+id: 38074276
+by: zdw
+time: 1698693161
+title: Mini-08 single-board computer based on the 8008 CPU [video]
+url: https://www.youtube.com/watch?v=oFVjI7945CU
+
+
+id: 38063687
+by: brandonlc
+time: 1698620198
+title: Life lessons from the death bed
+url: https://isonomiaquarterly.com/archive/volume-1-issue-2/life-lessons-from-the-death-bed/
+
+
+id: 38063687
+by: brandonlc
+time: 1698620198
+title: Life lessons from the death bed
+url: https://isonomiaquarterly.com/archive/volume-1-issue-2/life-lessons-from-the-death-bed/
+
+
+id: 38060517
+by: rbanffy
+time: 1698599118
+title: Atari Video Music
+url: https://en.wikipedia.org/wiki/Atari_Video_Music
+
+
+id: 38060517
+by: rbanffy
+time: 1698599118
+title: Atari Video Music
+url: https://en.wikipedia.org/wiki/Atari_Video_Music
+
+
+id: 38059047
+by: app4soft
+time: 1698590527
+title: RattleCAD
+url: https://archive.org/details/rattlecad
+
+
+id: 38059047
+by: app4soft
+time: 1698590527
+title: RattleCAD
+url: https://archive.org/details/rattlecad
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157466
+by: greesil
+time: 1699231668
+title: Listen to HD radio with a $30 RTL SDR dongle
+url: https://github.com/theori-io/nrsc5
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157145
+by: yeti-sh
+time: 1699229065
+title: Show HN: Jeeves – A Pythonic Alternative to GNU Make
+url: https://jeeves.sh
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38157120
+by: dev_tty01
+time: 1699228824
+title: Starlink achieves cash-flow breakeven, says SpaceX CEO Musk
+url: https://www.reuters.com/technology/elon-musk-says-starlink-has-achieved-breakeven-cash-flow-2023-11-02/
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156678
+by: LinuxBender
+time: 1699225653
+title: The Army Suddenly Told Hundreds Soldiers They Have to Be Recruiters Immediately
+url: https://www.military.com/daily-news/2023/11/01/army-suddenly-and-chaotically-told-hundreds-of-soldiers-they-have-be-recruiters-immediately.html
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156639
+by: johnsonjo
+time: 1699225408
+title: 18.S097 Applied Category Theory: Textbook (2019)
+url: https://ocw.mit.edu/courses/18-s097-applied-category-theory-january-iap-2019/resources/18-s097iap19textbook/
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156557
+by: khazhoux
+time: 1699224853
+title: Home Sellers Win $1.8B After Jury Finds Conspiracy Among Realtors
+url: https://www.nytimes.com/2023/10/31/realestate/nar-antitrust-lawsuit.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156486
+by: blakespot
+time: 1699224482
+title: Intel 80386, a Revolutionary CPU
+url: https://www.xtof.info/intel80386.html
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156481
+by: edward
+time: 1699224449
+title: Silicon Valley is piling in to the business of snooping
+url: https://www.economist.com/business/2023/11/05/silicon-valley-is-piling-in-to-the-business-of-snooping
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38156362
+by: geox
+time: 1699223609
+title: A decade since 'Sapiens': Scientific knowledge or populism?
+url: https://english.elpais.com/science-tech/2023-11-05/a-decade-since-sapiens-scientific-knowledge-or-populism.html
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
+id: 38155840
+by: janandonly
+time: 1699219743
+title: Big landlords are colluding to raise rents, D.C. lawsuit alleges
+url: https://www.axios.com/2023/11/02/dc-housing-rent-antitrust-lawsuit
+
+
