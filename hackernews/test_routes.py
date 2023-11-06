@@ -144,7 +144,7 @@ def get_vote_color(news_id, need_image, is_like):
     elif is_like is True:
         get_image_or_color = "#5f4747"
     elif need_image is True:
-        get_image_or_color = "thumbs_down.png"
+        get_image_or_color = "thumbs_up.png"
     else:
         get_image_or_color = "#5f4747"
     return get_image_or_color

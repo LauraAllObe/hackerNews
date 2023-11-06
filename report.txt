@@ -21,6 +21,11 @@ routes.py:75:63: C0121: Comparison 'Vote.liked == False' should be 'Vote.liked i
 ------------------------------------------------------------------
 Your code has been rated at 9.84/10 (previous run: 9.84/10, +0.00)
 
+(venv) 🦖 [lauraallobe@lao21-server hackerNews]$ pylint run.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 7.50/10, +2.50)
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~pytest~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~coverage~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~requirements~~~~~~~~~~~~~~~~~~~~~~~~~~~
