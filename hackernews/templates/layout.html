@@ -89,7 +89,7 @@
     		// Function to update the clock
 		function updateClock() {
         		const clock = document.getElementById("clock");
-        		const currentTime = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        		const currentTime = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'UTC'});
         		clock.textContent = currentTime + " UTC";
     		}
 

@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from os import environ as env
 from urllib.parse import quote_plus, urlencode
 from authlib.integrations.flask_client import OAuth
-from flask import render_template, request, url_for, redirect, session
+from flask import render_template, request, url_for, redirect, session, jsonify
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import desc
 import requests
@@ -329,6 +329,7 @@ def fetch_news_items():
                         db.session.commit()
                     except IntegrityError:
                         db.session.rollback()
+    return jsonify(message="OK"), 200
 
 
 @app.route("/newsfeed")
