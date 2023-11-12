@@ -4,7 +4,6 @@ from hackernews import app, db  # Import your Flask application's database modul
 from hackernews.models import News, Admin, User, Vote  # Import your database models
 
 
-# Test functions for News model
 def test_news_as_dict():
     news = News(id=1, by='John Doe', title='Test News', time=1234567890)
     result = news.as_dict()
@@ -21,7 +20,6 @@ def test_news_get_by():
     result = news.get_by()
     assert result == 'John Doe'
 
-# Test functions for Admin model
 def test_admin_as_dict():
     admin = Admin(email='admin@example.com')
     result = admin.as_dict()
@@ -35,7 +33,6 @@ def test_admin_get_email():
     result = admin.get_email()
     assert result == 'admin@example.com'
 
-# Test functions for User model
 def test_user_as_dict():
     user = User(id=1, email='user@example.com', name='Test User', admin=True, nickname='tester')
     result = user.as_dict()
@@ -53,7 +50,6 @@ def test_user_get_name():
     result = user.get_name()
     assert result == 'Test User'
 
-# Test functions for Vote model
 def test_vote_as_dict():
     vote = Vote(id=1, user_id=1, news_id=1, liked=False)
     result = vote.as_dict()

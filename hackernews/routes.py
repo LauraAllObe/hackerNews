@@ -415,9 +415,12 @@ def account():
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
     users = User.query.all()
-    return render_template("account.html", users=users, \
-            admin_emails=admin_emails, session=session.get('user'), \
-            pretty=json.dumps(session.get('user'), indent=4))
+    if session.get('user'):
+        return render_template("account.html", users=users, \
+                admin_emails=admin_emails, session=session.get('user'), \
+                pretty=json.dumps(session.get('user'), indent=4))
+    return jsonify(message="OK"), 200
+
 
 
 @app.route("/admin", methods=["GET", "POST"])
@@ -437,8 +440,9 @@ def admin():
             try:
                 new_email = request.form["new_email"]
                 new_admin = Admin(email=new_email)
-                db.session.add(new_admin)
-                user_to_update = User.query.filter_by(email=new_email).first()
+                if not Admin.query.filter_by(email=new_email).first():
+                    db.session.add(new_admin)
+                    user_to_update = User.query.filter_by(email=new_email).first()
                 if user_to_update:
                     user_to_update.admin = True
                 db.session.commit()
@@ -449,8 +453,9 @@ def admin():
             try:
                 email_to_delete = request.form["deleteAdmin"]
                 admin_to_delete = Admin.query.get_or_404(email_to_delete)
-                db.session.delete(admin_to_delete)
-                user_to_update = User.query.filter_by(email=email_to_delete).first()
+                if admin_to_delete:
+                    db.session.delete(admin_to_delete)
+                    user_to_update = User.query.filter_by(email=email_to_delete).first()
                 if user_to_update:
                     user_to_update.admin = False
                 db.session.commit()
@@ -460,20 +465,23 @@ def admin():
         if "deleteUser" in request.form:
             id_to_delete = request.form["deleteUser"]
             user_to_delete = User.query.get_or_404(id_to_delete)
-            try:
-                db.session.delete(user_to_delete)
-                votes_to_delete = Vote.query.filter_by(user_id=id_to_delete).all()
-                for vote in votes_to_delete:
-                    db.session.delete(vote)
-                db.session.commit()
-            except IntegrityError:
-                db.session.rollback()
+            if user_to_delete:
+                try:
+                    db.session.delete(user_to_delete)
+                    votes_to_delete = Vote.query.filter_by(user_id=id_to_delete).all()
+                    for vote in votes_to_delete:
+                        db.session.delete(vote)
+                    db.session.commit()
+                except IntegrityError:
+                    db.session.rollback()
     admins = Admin.query.all()
     admin_emails = [admin.email for admin in admins]
     users = User.query.all()
-    return render_template("admin.html", users=users, admins=admins, \
-            admin_emails=admin_emails, session=session.get('user'), \
-            pretty=json.dumps(session.get('user'), indent=4))
+    if session.get('user'):
+        return render_template("admin.html", users=users, admins=admins, \
+                admin_emails=admin_emails, session=session.get('user'), \
+                pretty=json.dumps(session.get('user'), indent=4))
+    return jsonify(message="OK"), 200
 
 
 def add_user(token):
@@ -490,12 +498,12 @@ def add_user(token):
     add_email = "N/A"
     add_name = "N/A"
     add_nickname = None
-    if userinfo.email:
-        add_email = userinfo.email
-    if userinfo.name:
-        add_name = userinfo.name
-    if userinfo.nickname:
-        add_nickname = userinfo.nickname
+    if userinfo.get('email'):
+        add_email = userinfo.get('email')
+    if userinfo.get('name'):
+        add_name = userinfo.get('name')
+    if userinfo.get('nickname'):
+        add_nickname = userinfo.get('nickname')
     user_exists = User.query.filter_by(email=userinfo.get("email")).first()
     admin_exists = Admin.query.filter_by(email=userinfo.get("email")).first()
     new_user = []
