@@ -225,7 +225,6 @@ def home():
     news_items = News.query \
     .order_by(desc(News.time)) \
     .paginate(page=page, per_page=10)
-    #click = {news_item.id: False for news_item in news_items.items}
     if request.method == "POST":
         action = request.form.get("action")
         current_news_id = request.form.get("news_item_id")
@@ -419,8 +418,7 @@ def account():
         return render_template("account.html", users=users, \
                 admin_emails=admin_emails, session=session.get('user'), \
                 pretty=json.dumps(session.get('user'), indent=4))
-    return jsonify(message="OK"), 200
-
+    return redirect("/")
 
 
 @app.route("/admin", methods=["GET", "POST"])
@@ -478,10 +476,12 @@ def admin():
     admin_emails = [admin.email for admin in admins]
     users = User.query.all()
     if session.get('user'):
+        if not session.get('user').get('userinfo').get('email') in admin_emails:
+            return redirect("/")
         return render_template("admin.html", users=users, admins=admins, \
                 admin_emails=admin_emails, session=session.get('user'), \
                 pretty=json.dumps(session.get('user'), indent=4))
-    return jsonify(message="OK"), 200
+    return redirect("/")
 
 
 def add_user(token):
@@ -530,4 +530,3 @@ def add_user(token):
                     str(new_user.id), str(new_user.email), str(new_user.name), \
                     str(new_user.admin), str(new_user.nickname))
             db.session.rollback()
-

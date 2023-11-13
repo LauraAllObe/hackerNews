@@ -1,4 +1,4 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~pylint~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~pylint~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 (venv) 🦖 [lauraallobe@lao21-server hackernews]$ pylint models.py
 
 -------------------------------------------------------------------
@@ -14,20 +14,60 @@ Your code has been rated at 9.55/10 (previous run: 9.55/10, +0.00)
 (venv) 🦖 [lauraallobe@lao21-server hackernews]$ pylint routes.py
 ************* Module hackernews.routes
 routes.py:138:98: C0303: Trailing whitespace (trailing-whitespace)
-routes.py:296:48: C0303: Trailing whitespace (trailing-whitespace)
+routes.py:295:48: C0303: Trailing whitespace (trailing-whitespace)
 routes.py:62:60: C0121: Comparison 'Vote.liked == True' should be 'Vote.liked is True' if checking for the singleton value True, or 'bool(Vote.liked)' if testing for truthiness (singleton-comparison)
 routes.py:75:63: C0121: Comparison 'Vote.liked == False' should be 'Vote.liked is False' if checking for the singleton value False, or 'not Vote.liked' if testing for falsiness (singleton-comparison)
+routes.py:425:0: R0912: Too many branches (15/12) (too-many-branches)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.84/10 (previous run: 9.84/10, +0.00)
+Your code has been rated at 9.80/10 (previous run: 9.80/10, +0.00)
+
+(venv) 🦖 [lauraallobe@lao21-server hackernews]$ pylint test_models.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+(venv) 🦖 [lauraallobe@lao21-server hackernews]$ pylint test_routes.py
+************* Module hackernews.test_routes
+test_routes.py:191:69: C0303: Trailing whitespace (trailing-whitespace)
+test_routes.py:177:8: E1111: Assigning result of a function call, where the function has no return (assignment-from-no-return)
+
+------------------------------------------------------------------
+Your code has been rated at 9.42/10 (previous run: 9.05/10, +0.38)
 
 (venv) 🦖 [lauraallobe@lao21-server hackerNews]$ pylint run.py
 
 -------------------------------------------------------------------
 Your code has been rated at 10.00/10 (previous run: 7.50/10, +2.50)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~pytest~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~coverage~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(venv) 🦖 [lauraallobe@lao21-server hackernews]$ coverage run --source=. -m pytest test_models.py test_routes.py
+======================================== test session starts ========================================
+platform linux -- Python 3.10.12, pytest-7.4.3, pluggy-1.3.0
+rootdir: /home/lauraallobe/hackerNews/hackernews
+collected 22 items                                                                                  
+
+test_models.py ........                                                                       [ 36%]
+test_routes.py ..............                                                                 [100%]
+
+========================================= warnings summary ==========================================
+test_routes.py::test_admin_route_two
+test_routes.py::test_admin_route_two
+  /home/lauraallobe/hackerNews/venv/lib/python3.10/site-packages/flask_sqlalchemy/query.py:30: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    rv = self.get(ident)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================== 22 passed, 2 warnings in 9.03s ===================================
+(venv) 🦖 [lauraallobe@lao21-server hackernews]$ coverage report
+Name             Stmts   Miss  Cover
+------------------------------------
+__init__.py         22      0   100%
+models.py           48      0   100%
+routes.py          264     76    71%
+test_models.py      40      1    98%
+test_routes.py     104      0   100%
+------------------------------------
+TOTAL              478     77    84%
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~requirements~~~~~~~~~~~~~~~~~~~~~~~~~~~
 astroid==3.0.1
 attrs==23.1.0
