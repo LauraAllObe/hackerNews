@@ -118,4 +118,79 @@ start the service and test that it is running:
     sudo systemctl enable hackerNews
     sudo systemctl status hackerNews
 configure nginx:
-----------------
+----------------server {
+	server_name www.aplacetostorehackernews.online;
+	
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/www.aplacetostorehackernews.online/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/www.aplacetostorehackernews.online/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+    add_header Strict-Transport-Security "max-age=31536000; includeSubdomains; preload" always;
+    #add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; img-src 'self' https://www.google.com";
+    add_header X-Content-Type-Options nosniff;
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+
+    	location / {
+                include proxy_params;
+                proxy_pass http://unix:/home/lauraallobe/hackerNews/hackernews.sock;
+        }
+
+        location /newsfeed {
+                include proxy_params;
+                proxy_pass http://unix:/home/lauraallobe/hackerNews/hackernews.sock;
+        }
+
+        location /execute_fetch {
+                include proxy_params;
+                proxy_pass http://unix:/home/lauraallobe/hackerNews/hackernews.sock;
+        }
+
+        location /account {
+                include proxy_params;
+                proxy_pass http://unix:/home/lauraallobe/hackerNews/hackernews.sock;
+        }
+
+	location /admin {
+		include proxy_params;
+                proxy_pass http://unix:/home/lauraallobe/hackerNews/hackernews.sock;
+	}
+
+	location /admin/delete {
+		include proxy_params;
+                proxy_pass http://unix:/home/lauraallobe/hackerNews/hackernews.sock;
+	}
+
+	location /admin/add {
+		include proxy_params;
+                proxy_pass http://unix:/home/lauraallobe/hackerNews/hackernews.sock;
+	}
+
+}
+server {
+    if ($host = www.aplacetostorehackernews.online) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+	listen 80;
+	server_name www.aplacetostorehackernews.online;
+    return 404; # managed by Certbot
+
+
+}
+[Unit]
+Description=Gunicorn instance to serve hackernews
+After=network.target
+
+[Service]
+User=lauraallobe
+Group=www-data
+WorkingDirectory=/home/lauraallobe/hackerNews
+Environment="PATH=/home/lauraallobe/hackerNews/venv/bin"
+ExecStart=/home/lauraallobe/hackerNews/venv/bin/gunicorn --workers 3 --bind unix:hackernews.sock -m 007 run:app
+
+[Install]
+WantedBy=multi-user.target
