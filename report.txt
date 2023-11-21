@@ -1,5 +1,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~demonstration video~~~~~~~~~~~~~~~~~~~~~~~~
 https://drive.google.com/file/d/1gLZ9S7o_zxhzd0GrrvK6m3cC53iq3K6v/view?usp=drive_link
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~repo link~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://gitlab.com/cop45216045641/hackerNews
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~pylint~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 (venv) 🦖 [lauraallobe@lao21-server hackernews]$ pylint models.py
 
