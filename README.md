@@ -6,7 +6,7 @@
     to create and access their accounts (linked to Google). The admin "/admin" route allows non-admin users and add 
     and delete admins. The profile "/account" route allows users to view their profile information. The newsfeed 
     "/newsfeed" route displays the latest news items in descending order (by time).
-
+https://youtu.be/uVsRSZlpIrU
 Table of Contents:
 ==================
     1       file description
