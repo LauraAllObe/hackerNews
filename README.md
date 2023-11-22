@@ -289,9 +289,9 @@ Testing:
 
 Closing Notes:
 ==============
-    when changing nginx, run the following:
+    after changing nginx, run the following:
     ---------------------------------------
         sudo systemctl restart nginx
-    when changing the hackerNews application, run the following:
+    after changing the hackerNews application, run the following:
     ------------------------------------------------------------
         sudo systemctl restart hackerNews
