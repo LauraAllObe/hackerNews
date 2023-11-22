@@ -13,6 +13,7 @@ Table of Contents:
     17-58   file structure
     60-267  installation and configuration
     269-286 testing (pylint and pytest/coverage)
+    290-297 closing notes
 
 File Structure:
 ===============
@@ -285,3 +286,12 @@ Testing:
     --------------------------
         coverage run --source=. -m pytest test_models.py test_routes.py
         coverage report
+
+Closing Notes:
+==============
+    when changing nginx, run the following:
+    ---------------------------------------
+        sudo systemctl restart nginx
+    when changing the hackerNews application, run the following:
+    ------------------------------------------------------------
+        sudo systemctl restart hackerNews
