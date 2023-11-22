@@ -1,11 +1,10 @@
-#this is the README.md file for the hackerNews project (flask application) configured using nginx and gunicorn
-##    the hackerNews application aims at delivering the latest hackernews on an hourly basis. The home route "/"
-##    displays a paginated view in descending order (by time) of these news items, which can be liked and disliked 
-##    by users that are logged in. The login "/login", logout "/logout", and callback "/callback" routes are handled 
-##    by auth0 to allow users to create and access their accounts (linked to Google). The admin "/admin" route allows 
-##    non-admin users and add and delete admins. The profile "/account" route allows users to view their profile
-##    information. The newsfeed "/newsfeed" route displays the latest news items in descending order (by time).
-
+##  this is the README.md file for the hackerNews project (flask application) configured using nginx and gunicorn
+    the hackerNews application aims at delivering the latest hackernews on an hourly basis. The home route "/"
+    displays a paginated view in descending order (by time) of these news items, which can be liked and disliked 
+    by users that are logged in. The login "/login", logout "/logout", and callback "/callback" routes are handled 
+    by auth0 to allow users to create and access their accounts (linked to Google). The admin "/admin" route allows 
+    non-admin users and add and delete admins. The profile "/account" route allows users to view their profile
+    information. The newsfeed "/newsfeed" route displays the latest news items in descending order (by time).
 
 Table of Contents:
 ==================
@@ -13,7 +12,7 @@ Table of Contents:
     2-7     project description & features
     17-58   file structure
     60-267  installation and configuration
-    269-
+    269-286 testing
 
 File Structure:
 ===============
