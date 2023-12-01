@@ -13,8 +13,8 @@ Table of Contents:
     2-8     project description & features
     19-60   file structure
     62-274  installation and configuration
-    276-293 testing (pylint and pytest/coverage)
-    295-302 closing notes
+    276-287 testing (pylint and pytest/coverage)
+    289-296 closing notes
 
 File Structure:
 ===============
@@ -280,13 +280,7 @@ Testing:
         cd hackerNews
     run pylint:
     -----------
-        pylint run.py
-        cd hackernews
-        pylint __init__.py
-        pylint models.py
-        pylint routes.py
-        pylint test_models.py
-        pylint test_routes.py
+        pylint run.py hackernews/models.py hackernews/routes.py hackernews/__init__.py hackernews/test_models.py hackernews/test_routes.py
     run pytest using coverage:
     --------------------------
         coverage run --source=. -m pytest test_models.py test_routes.py
