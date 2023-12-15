@@ -2,15 +2,14 @@
 
 Table of Contents:
 ==================
-    [file description]()
-    [demonstration video]()
-    [project description & features]()
+    [project description](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#project-description)
+    [demonstration video](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#demonstration-video)
     [file structure](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#file-structure)
-    [installation and configuration]()
-    [testing (pylint and pytest/coverage)]()
-    [closing notes]()
+    [installation and configuration](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#installation-and-configurations)
+    [testing (pylint and pytest/coverage)](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#testing)
+    [closing notes](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#closing-notes)
 
-File description:
+Project description:
 =================
 The flask application was configured using nginx and gunicorn and uses an SQLite database. The hackerNews 
 application aims at delivering the latest hackernews on an hourly basis. The home route "/" displays a paginated 
