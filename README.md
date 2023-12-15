@@ -23,7 +23,7 @@ and delete admins. The profile "/account" route allows users to view their profi
 
 Demonstration Video:
 ====================
-[![IMAGE ALT TEXT HERE](https://drive.google.com/uc?export=view&id=1ZMreIaBDSfZCEcQRrxcI3n6HMiXJJcrP)](https://youtu.be/uVsRSZlpIrU)
+[![](https://drive.google.com/uc?export=view&id=1ZMreIaBDSfZCEcQRrxcI3n6HMiXJJcrP)](https://youtu.be/uVsRSZlpIrU)
 
 File Structure:
 ===============
