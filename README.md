@@ -2,12 +2,12 @@
 
 Table of Contents:
 ==================
-[project description](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#project-description)
-[demonstration video](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#demonstration-video)
-[file structure](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#file-structure)
-[installation and configuration](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#installation-and-configurations)
-[testing (pylint and pytest/coverage)](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#testing)
-[closing notes](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#closing-notes)
+[project description](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#project-description)  
+[demonstration video](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#demonstration-video)  
+[file structure](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#file-structure)  
+[installation and configuration](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#installation-and-configurations)  
+[testing (pylint and pytest/coverage)](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#testing)  
+[closing notes](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#closing-notes)  
 
 Project description:
 =================
