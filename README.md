@@ -1,22 +1,30 @@
-##  this is the README.md file for the hackerNews project
-    The flask application was configured using nginx and gunicorn and uses an SQLite database. The hackerNews 
-    application aims at delivering the latest hackernews on an hourly basis. The home route "/" displays a paginated 
-    view in descending order (by time) of these news items, which can be liked and disliked by users that are logged 
-    in. The login "/login", logout "/logout", and callback "/callback" routes are handled by auth0 to allow users 
-    to create and access their accounts (linked to Google). The admin "/admin" route allows non-admin users and add 
-    and delete admins. The profile "/account" route allows users to view their profile information. The newsfeed 
-    "/newsfeed" route displays the latest news items in descending order (by time).
-### Please visit https://www.aplacetostorehackernews.online/ for a running instance of the webiste
-###### (stored at https://gitlab.com/cop45216045641/hackerNews)
-![](https://youtu.be/uVsRSZlpIrU)
+# *hackerNews*
+
 Table of Contents:
 ==================
-    1       file description
-    2-8     project description & features
-    19-61   file structure
-    63-275  installation and configuration
-    277-288 testing (pylint and pytest/coverage)
-    290-297 closing notes
+    [file description]()
+    [demonstration video]()
+    [project description & features]()
+    [file structure](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#file-structure)
+    [installation and configuration]()
+    [testing (pylint and pytest/coverage)]()
+    [closing notes]()
+
+File description:
+=================
+The flask application was configured using nginx and gunicorn and uses an SQLite database. The hackerNews 
+application aims at delivering the latest hackernews on an hourly basis. The home route "/" displays a paginated 
+view in descending order (by time) of these news items, which can be liked and disliked by users that are logged 
+in. The login "/login", logout "/logout", and callback "/callback" routes are handled by auth0 to allow users 
+to create and access their accounts (linked to Google). The admin "/admin" route allows non-admin users and add 
+and delete admins. The profile "/account" route allows users to view their profile information. The newsfeed 
+"/newsfeed" route displays the latest news items in descending order (by time).
+###### *Please visit https://www.aplacetostorehackernews.online/ for a running instance of the webiste.*
+###### *(stored at https://gitlab.com/cop45216045641/hackerNews)*  
+
+Demonstration Video:
+====================
+[![IMAGE ALT TEXT HERE](https://drive.google.com/uc?export=view&id=1ZMreIaBDSfZCEcQRrxcI3n6HMiXJJcrP)](https://youtu.be/uVsRSZlpIrU)
 
 File Structure:
 ===============
