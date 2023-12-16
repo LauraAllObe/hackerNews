@@ -1,4 +1,4 @@
-hackerNews
+Hacker news
 ==========
 The flask application was configured using nginx and gunicorn and uses an SQLite database. The hackerNews 
 application aims at delivering the latest hackernews on an hourly basis. The home route "/" displays a paginated 
