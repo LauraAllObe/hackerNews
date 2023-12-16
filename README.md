@@ -1,16 +1,5 @@
-# *hackerNews*
-
-Table of Contents:
-==================
-1. [project description](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#project-description)  
-2. [demonstration video](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#demonstration-video)  
-3. [file structure](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#file-structure)  
-4. [installation and configuration](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#installation-and-configurations)  
-5. [testing (pylint and pytest/coverage)](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#testing)  
-6. [closing notes](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#closing-notes)  
-
-Project description:
-=================
+hackerNews
+==========
 The flask application was configured using nginx and gunicorn and uses an SQLite database. The hackerNews 
 application aims at delivering the latest hackernews on an hourly basis. The home route "/" displays a paginated 
 view in descending order (by time) of these news items, which can be liked and disliked by users that are logged 
@@ -20,6 +9,15 @@ and delete admins. The profile "/account" route allows users to view their profi
 "/newsfeed" route displays the latest news items in descending order (by time).
 ###### *Please visit https://www.aplacetostorehackernews.online/ for a running instance of the webiste.*
 ###### *(stored at https://gitlab.com/cop45216045641/hackerNews)*  
+
+Table of Contents:
+==================
+1. [project description](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#hackerNews)  
+2. [demonstration video](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#demonstration-video)  
+3. [file structure](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#file-structure)  
+4. [installation and configuration](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#installation-and-configurations)  
+5. [testing (pylint and pytest/coverage)](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#testing)  
+6. [closing notes](https://github.com/LauraAllObe/hackerNews?tab=readme-ov-file#closing-notes)  
 
 Demonstration Video:
 ====================
