@@ -9,7 +9,7 @@ from urllib.parse import quote_plus, urlencode
 from authlib.integrations.flask_client import OAuth
 from flask import render_template, request, url_for, redirect, session, jsonify
 from sqlalchemy.exc import IntegrityError
-from sqlalchemy import desc
+from sqlalchemy import desc, func, case
 import requests
 from hackernews import app, db
 from hackernews.models import News, Admin, User, Vote
@@ -222,9 +222,23 @@ def home():
     if request.method == "POST":
         page = request.form.get("page", type=int)
         app.logger.error("page: %d\n", page)
-    news_items = News.query \
-    .order_by(desc(News.time)) \
-    .paginate(page=page, per_page=10)
+    
+    likes_dislikes_subq = Vote.query.with_entities(
+        Vote.news_id.label('news_id'),
+        func.coalesce(func.sum(case((Vote.liked == True, 1), else_=0)), 0).label('total_likes'),
+        func.coalesce(func.sum(case((Vote.liked == False, 1), else_=0)), 0).label('total_dislikes')
+    ).group_by(Vote.news_id).subquery()
+
+    news_items = News.query.join(
+        likes_dislikes_subq, likes_dislikes_subq.c.news_id == News.id
+    ).order_by(
+        desc(likes_dislikes_subq.c.total_likes),
+        desc(likes_dislikes_subq.c.total_dislikes),
+        desc(News.time)
+    ).paginate(page=page, per_page=10)
+    #news_items = News.query \
+    #.order_by(desc(News.time)) \
+    #.paginate(page=page, per_page=10)
     if request.method == "POST":
         action = request.form.get("action")
         current_news_id = request.form.get("news_item_id")
